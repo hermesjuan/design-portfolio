@@ -1,0 +1,33 @@
+.Cases {
+    width: 1000px;
+    height: 240px;
+    position: relative;
+    transition: 0.5s cubic-bezier(0.2, 0.8, 0.8, 1);
+    margin: 0 0 35px 0;
+    cursor: pointer;
+}
+
+.Cases:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgb(0,0,0,0.1);
+
+}
+
+.Cases img {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+
+.Cases h3 {
+    color: black;
+    font-size: 40px;
+    font-weight: 900;
+    max-width: 425px;
+    position: absolute;
+    left: 40px;
+}
+
+.Cases:nth-of-type(5) h3 {
+    color: white;
+}

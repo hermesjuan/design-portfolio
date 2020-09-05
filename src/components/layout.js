@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+import staticdata from '../../staticdata.json'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -35,7 +36,12 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
+          <div className="SocialLinksGroup">
+            {staticdata.cells.map(cell => (
+              <div class="SocialLinks">{cell.title}</div>
+            ))}
+          </div>
+          Made by Hermes © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>

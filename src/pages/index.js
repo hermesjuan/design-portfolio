@@ -40,17 +40,6 @@ const IndexPage = () => (
         image={require('../images/Case-Swift.jpg')}
         />
       </div>
-      <Section
-        title="Things i feel comfortable doing"
-        element1="Branding"
-        color1="#F7F4EF"
-        element2="UI"
-        color2="#F2F8F8"
-        element3="Photography"
-        element4="UX"
-        element5="Some coding"
-        element6="No code"
-      />
   </Layout>  
 )
 

@@ -38,7 +38,7 @@ const Layout = ({ children }) => {
         <footer>
           <div className="SocialLinksGroup">
             {staticdata.cells.map(cell => (
-              <div class="SocialLinks">{cell.title}</div>
+              <a href={cell.url} target="_blank" class="SocialLinks">{cell.title}</a>
             ))}
           </div>
           Made by Hermes © {new Date().getFullYear()}, Built with

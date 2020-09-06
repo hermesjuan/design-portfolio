@@ -37,6 +37,7 @@ const SectionElements = styled.h3 `
     justify-content: center;
     font-size: 22px;
     font-weight: 900;
+
     @media (max-width: 640px) {
         width: 100%;
     }

@@ -114,7 +114,7 @@ footer {
 
 @media (max-width: 640px) {
   .HeroGroup {
-    padding: 100px 20px;
+    padding: 140px 20px;
   }
 
   .Hero h1 {
@@ -122,13 +122,25 @@ footer {
   }
 
   .Hero p {
-    font-size: 20px;
+    font-size: 16px;
   }
+
+  .Hero p a {
+    font-size: 16px;
+  }
+
+  .ImageBehindTitle {
+    width: 70%;
+    right: 0;
+  }
+
   .SocialLinksGroup {
     display: block;
-    padding: 0 200px 35px 200px;
+    padding: 20px 90px 35px 90px;
+    grid-template-columns: 1fr;
   }
   .SocialLinks {    
     font-size: 14px;
   }
+  
 }

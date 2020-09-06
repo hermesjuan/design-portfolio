@@ -7,6 +7,9 @@ const SectionGroup = styled.div `
 
 const SectionTitle = styled.h3 `
     font-size: 30px;
+    @media (max-width: 640px) {
+        text-align: center;
+    }
 `
 
 const SectionElementsGroup = styled.div `
@@ -14,6 +17,13 @@ const SectionElementsGroup = styled.div `
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 15px;
     margin: 40px auto 30px auto;
+
+    @media (max-width: 1100px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 640px) {
+        grid-template-columns: 1fr;
+    }
 `
 
 const SectionElements = styled.h3 `
@@ -27,6 +37,9 @@ const SectionElements = styled.h3 `
     justify-content: center;
     font-size: 22px;
     font-weight: 900;
+    @media (max-width: 640px) {
+        width: 100%;
+    }
 `
 
 

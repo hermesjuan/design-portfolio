@@ -1,11 +1,11 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://github.com/hermesjuan/design-portfolio/blob/master/src/images/Hand.svg" width="60" />
+    <img alt="Gatsby" src="https://github.com/hermesjuan/design-portfolio/blob/master/src/images/Hand.svg" width="100" />
   </a>
 </p>
 <h1 align="center">
-  Hermes' portfolio, build upon Gatsby
+  Hermes' portfolio, built with Gatsby
 </h1>
 
 First time using Gatsby and i'm amaze at the speed i was able to put this together. Still a lot to learn and optimize but been having a good time so far.

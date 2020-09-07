@@ -5,6 +5,7 @@
     transition: 0.5s cubic-bezier(0.2, 0.8, 0.8, 1);
     margin: 0 0 35px 0;
     cursor: pointer;
+    font-family: 'Raleway', sans-serif;
 }
 
 .Cases:hover {
@@ -28,7 +29,7 @@
     left: 40px;
 }
 
-.Cases:nth-of-type(5) h3 {
+.WhiteLink .Cases h3 {
     color: white;
 }
 

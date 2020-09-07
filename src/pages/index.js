@@ -19,26 +19,26 @@ const IndexPage = () => (
       </div>
     </div>    
     <div className="CasesGroup">
-      <Cases
+    <a href="https://www.beta.cards" target="_blank"><Cases
         title="Bootstrapping a methodolgy-based startup"
         image={require('../images/Case-Betacards.jpg')}
-        />
-      <Cases
+        /></a>
+      <a href="https://www.behance.net/gallery/103333403/MUV-The-first-ride-sharing-app-of-Paraguay" target="_blank"><Cases
         title="Creating the MVP of the first ride-sharing app of Paraguay"
         image={require('../images/Case-MUV.jpg')}
-        />
-      <Cases
+        /></a>
+      <a href="https://www.behance.net/gallery/103417451/Devpost-UX-How-developers-search-for-new-jobs" target="_blank"><Cases
         title="Researching how developers search for new jobs"
         image={require('../images/Case-Devpost.jpg')}
-        />
-      <Cases
+        /></a>
+      <a href="https://www.behance.net/gallery/71724883/Vision-Sur" target="_blank"><Cases
         title="Creating the logo of a social think tank"
         image={require('../images/Case-VS.jpg')}
-        />
-      <Cases
+        /></a>
+      <a className="WhiteLink" href="/"><Cases
         title="Dipped my toes in SwiftUI during lockdown"
         image={require('../images/Case-Swift.jpg')}
-        />
+        /></a>
       </div>
   </Layout>  
 )

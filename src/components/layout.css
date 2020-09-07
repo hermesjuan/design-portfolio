@@ -134,6 +134,11 @@ footer {
     right: 0;
   }
 
+  .CasesGroup {
+    margin: 0;
+    width: 100%;
+  }
+
   .SocialLinksGroup {
     display: block;
     padding: 20px 90px 35px 90px;
@@ -141,6 +146,7 @@ footer {
   }
   .SocialLinks {    
     font-size: 14px;
+    padding: 0 10px;
   }
   
 }

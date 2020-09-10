@@ -95,12 +95,15 @@ footer {
   width: 100%;
   text-align: center;
   font-size: 12px;
+  margin-bottom: 20px;
 }
 
 .SocialLinksGroup {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 0 200px 35px 200px;
+  max-width: 300px;
+  margin: auto;
+  padding: 35px 200px;
 }
 
 .SocialLinks {
@@ -114,12 +117,16 @@ footer {
 
 
 @media (max-width: 640px) {
+  .Hero {
+    margin: 60px 30px;
+    height: auto;
+  }
   .HeroGroup {
-    padding: 140px 20px;
+    padding: 50px 0px;
   }
 
   .Hero h1 {
-    font-size: 40px;;
+    font-size: 38px;;
   }
 
   .Hero p {
@@ -142,7 +149,7 @@ footer {
 
   .SocialLinksGroup {
     display: block;
-    padding: 20px 90px 35px 90px;
+    padding: 20px 70px;
     grid-template-columns: 1fr;
   }
   .SocialLinks {    

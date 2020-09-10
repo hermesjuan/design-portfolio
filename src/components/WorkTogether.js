@@ -12,6 +12,10 @@ const Section = styled.div `
     p, a {
         font-family: 'Merriweather', serif;
     }
+
+    @media (max-width: 640px) {
+        padding: 50px;
+    }
     
 `
 

@@ -12,6 +12,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 import staticdata from '../../staticdata.json'
+import WorkTogether from "./WorkTogether"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -29,6 +30,7 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
         <main>{children}</main>
         <footer>
+          <WorkTogether></WorkTogether>
           <div className="SocialLinksGroup">
             {staticdata.cells.map(cell => (
               <a href={cell.url} target="_blank" class="SocialLinks">{cell.title}</a>

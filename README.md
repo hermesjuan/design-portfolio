@@ -8,7 +8,7 @@
   Hermes' portfolio, built with Gatsby
 </h1>
 
-First time using Gatsby and i'm amaze at the speed i was able to put this together. Still a lot to learn and optimize but been having a good time so far.
+First time using Gatsby and i'm amazed at the speed i was able to put this together. Still a LOT to learn and optimize but been having a good time so far.
 
 _Wann learn more about Gatgsby? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
 

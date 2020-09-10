@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 //import PropTypes from "prop-types"
 import React from "react"
 import './Header.css'
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 class Header extends React.Component {
   constructor(props) {
@@ -31,9 +32,9 @@ class Header extends React.Component {
     return (
       <div className={this.state.hasScrolled ? 'Header HeaderScrolled' : 'Header'}>
         <div className="HeaderGroup">
-          <Link to="/"><img src={require('../images/Logo.svg')} width="85px"/></Link>
+          <AniLink paintDrip to="/" hex="#C6ECFD"><img src={require('../images/Logo.svg')} width="85px"/></AniLink>
           <div></div>
-          <Link to="/about">About me</Link>
+          <AniLink paintDrip to="/about" hex="#C6ECFD">About me</AniLink>
         </div>
      </div>
     )

@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Its Hermes!`,
     description: `I'm looking for the next chapter in my career. Take a look at some of the stuff i did so far`,
-    keyboards: 'design, remote, UI/UX, portfolio, hiring',
+    keyboards: 'design, remote, UI/UX, portfolio, hiring, visual designer',
     author: `@hermesjuan`,
   },
   plugins: [
@@ -13,7 +13,8 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
-    },
+    },    
+    `gatsby-plugin-transition-link`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,

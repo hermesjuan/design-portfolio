@@ -26,12 +26,13 @@ a {
 
 .Hero{
   height: 790px;
+  margin: 30px 50px;
 }
 
 .HeroGroup {
   margin: 0 auto;
   max-width: 1000px;
-  padding: 200px 0 230px 0;
+  padding: 150px 0 230px 0;
   position: relative;
 }
 
@@ -47,7 +48,7 @@ a {
   font-weight: 300;
   font-size: 13px;
   max-width: 485px;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 .ImageBehindTitle {

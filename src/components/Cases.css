@@ -46,20 +46,22 @@
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     .Cases {
         display: grid;
         grid-template-rows: 1fr;
     }
 
     .Cases h3 {
-        background-color: #C6ECFD;
+        background: rgba(198,236,255, 0.85);
+        backdrop-filter: blur(20px);
         margin-top: 30px;
         width: 60%;
-        font-size: 24px;
+        height: 130px;
+        font-size: 26px;
         left: 0;
         right: 0;
-        padding: 20px;
+        padding: 40px 20px 20px 20px;
         box-shadow: 0 10px 20px rgb(0,0,0,0.1);
     }
 

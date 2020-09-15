@@ -36,7 +36,7 @@ const Layout = ({ children }) => {
               <a href={cell.url} target="_blank" class="SocialLinks">{cell.title}</a>
             ))}
           </div>
-          Made by Hermes © {new Date().getFullYear()}, Built with
+          Built by Hermes © {new Date().getFullYear()}, with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>

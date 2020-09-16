@@ -13,6 +13,13 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+        trackingId: "UA-178192384-1",
+      },
     },    
     `gatsby-plugin-transition-link`,
     `gatsby-transformer-sharp`,
@@ -29,6 +36,7 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/Favicon-Hermes.png`, // This path is relative to the root of the site.
       },
+      
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

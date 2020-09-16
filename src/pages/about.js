@@ -5,11 +5,15 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "styled-components"
 
-const JourneyGraph = styled.div `
-  /* position: absoule; */
-  width: 100%;
-  height: 740px;
+const Hero = styled.div `
+  height: 460px;
   margin: 30px 50px;
+  h1 {
+    font-weight: 900;
+    font-size: 52px;
+    max-width: 800px;
+    line-height: 1.1;
+  }
 `
 const HeroGroup = styled.div `
   margin: 0 auto;
@@ -17,14 +21,13 @@ const HeroGroup = styled.div `
   padding: 100px 0;
   position: relative;
 `
-const Hero = styled.div `
-  height: 70vh;
+const JourneyGraph = styled.div `
+  /* position: absoule; */
+  width: 100%;
+  height: 740px;
   margin: 30px 50px;
-  h1 {
-    font-weight: 900;
-    font-size: 52px;
-    max-width: 800px;
-    line-height: 1.1;
+  img {
+    margin: 0 28px;
   }
 `
 

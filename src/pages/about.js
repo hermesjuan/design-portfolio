@@ -19,6 +19,11 @@ const Hero = styled.div `
       font-size: 42px;
     }
   }
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 32px;
+    }
+  }
 `
 const HeroGroup = styled.div `
   margin: 0 auto;

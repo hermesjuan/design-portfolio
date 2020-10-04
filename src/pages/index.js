@@ -13,7 +13,7 @@ const IndexPage = () => (
     <div className="Hero">
       <div className="HeroGroup">
       <img className="ImageBehindTitle" src={require('../images/Hand.svg')} alt="Hand"></img>
-       <h1>Hey! I'm looking for the next step in building a career in tech</h1>
+       <h1>Hey! I'm looking for the next step in growing my career in tech</h1>
        <p>After teasing coding for the past +5 years while being a designer i’m looking to join a tech company to keep growing on my technical side, while adding value as a designer. Either as a <a className="Wtf">senior generalist designer</a>, mid-level UI/UX or a junior front-end developer, i truly believe i can add value to any company while growing within the role trusted in me.</p>
        <p>You can learn a little more <Link to="/about">about me</Link> or keep scrolling to see some of the work i’ve done.</p>
         

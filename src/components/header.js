@@ -32,9 +32,9 @@ class Header extends React.Component {
     return (
       <div className={this.state.hasScrolled ? 'Header HeaderScrolled' : 'Header'}>
         <div className="HeaderGroup">
-          <AniLink paintDrip to="/" hex="#C6ECFD"><img src={require('../images/Logo.svg')} width="85px"/></AniLink>
+          <AniLink className='Logo' paintDrip to="/" hex="#C6ECFD"><img src={require('../images/Logo.svg')} width="85px"/></AniLink>
           <div></div>
-          <AniLink paintDrip to="/about" hex="#C6ECFD">About me</AniLink>
+          <AniLink className='Link' paintDrip to="/about" hex="#C6ECFD">About me</AniLink>
         </div>
      </div>
     )

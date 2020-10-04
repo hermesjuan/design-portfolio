@@ -32,8 +32,8 @@ const IndexPage = () => (
           title="Researching how developers search for new jobs"
           image={require('../images/case-img-devpost.png')}
           /></a>
-        <a href="https://www.behance.net/gallery/71724883/Vision-Sur" target="_blank"><CasesEven
-          title="Creating the logo of a social think tank"
+        <a href="http://eklf.com.py/" target="_blank"><CasesEven
+          title="Rebranding of a young law firm"
           image={require('../images/case-img-eklf.png')}
           /></a>
         <a className="WhiteLink" href="/"><CasesOdd

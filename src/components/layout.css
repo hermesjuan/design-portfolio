@@ -20,6 +20,10 @@ body {
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
 
+main {
+  margin-bottom: -90px;
+}
+
 a {
   color: black;
   font-family: 'Inconsolata', monospace;
@@ -61,8 +65,11 @@ a {
 }
 
 .CasesGroup {
-  margin: 100px auto 200px auto;
-  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.CasesGroup a {
+  text-decoration: none;
 }
 
 
@@ -119,6 +126,9 @@ footer {
 
 
 @media (max-width: 640px) {
+  main {
+    margin-bottom: 0;
+  }
   .Hero {
     margin: 60px 30px;
     height: auto;
@@ -151,11 +161,11 @@ footer {
 
   .SocialLinksGroup {
     display: block;
-    padding: 20px 70px;
+    padding: 20px 50px;
     grid-template-columns: 1fr;
   }
   .SocialLinks {    
-    font-size: 14px;
+    font-size: 12px;
     padding: 0 10px;
   }
   

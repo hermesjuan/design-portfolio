@@ -14,7 +14,10 @@ const Section = styled.div `
     }
 
     @media (max-width: 640px) {
-        padding: 50px;
+        padding: 110px 30px 90px 30px;
+        h1 {
+            font-size: 26px;
+        }
     }
     
 `

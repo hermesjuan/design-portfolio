@@ -38,6 +38,11 @@
 
 @media (max-width: 640px) {
     .Header {
-        padding: 15px;
+        padding: 0;
+        margin: 20px;
+        width: 90vw;
+    }
+    .HeaderGroup {
+        grid-template-columns: 1fr 0.1fr 1fr;
     }
 }

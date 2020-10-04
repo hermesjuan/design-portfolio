@@ -6,16 +6,12 @@ import SEO from "../components/seo"
 import styled from "styled-components"
 
 const Hero = styled.div `
-  height: 430px;
   margin: 30px 50px;
+  max-width: 800px;
   h1 {
     font-weight: 900;
     font-size: 52px;
-    max-width: 800px;
     line-height: 1.1;
-  }
-  p {
-    max-width: 700px;
   }
   @media (max-width: 800px) {
     h1 {
@@ -23,6 +19,7 @@ const Hero = styled.div `
     }
   }
   @media (max-width: 600px) {
+    margin: 30px 20px;
     h1 {
       font-size: 32px;
     }
@@ -31,8 +28,7 @@ const Hero = styled.div `
 const HeroGroup = styled.div `
   margin: 0 auto;
   max-width: 1000px;
-  padding: 100px 0;
-  position: relative;
+  margin: 100px 0 0px 0;
 `
 const JourneyGraph = styled.img `
   width: 100%;
@@ -53,6 +49,9 @@ const Section = styled.div`
     color: inherit;
     font-family: inherit;
     font-weight: inherit;
+  }
+  @media (max-width: 600px) {
+    padding: 30px 20px;
   }
 `
 const Position = styled.h3 `
@@ -92,6 +91,11 @@ const Group = styled.div `
   grid-template-columns: 1fr 0.4fr;
   grid-column-gap: 40px;
   margin-bottom: 100px;
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  margin-bottom: 20px;
+
+  }
 `
 
 

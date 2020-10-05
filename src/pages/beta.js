@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/Button"
 import styled from "styled-components"
+import OtherProjects from '../components/OtherProjects'
 
 const HeroImage = styled.img `
     width: 100%;
@@ -126,6 +127,20 @@ const Beta = () => (
         <Section>
             <Button text="← Go Home" link="/" />
         </Section>
+        <OtherProjects 
+            link1="/"
+            text1="Creating the MVP of the first ride-sharing app of Paraguay"
+            image1={require('../images/case-img-muv.png')}
+
+            link2="/"
+            text2="Researching how developers search for jobs"
+            image2={require('../images/case-img-devpost.png')}
+            
+            link3="/"
+            text3="Rebranding for a young law firm"
+            image3={require('../images/case-img-eklf.png')}  
+
+        />
 
     </Layout>
 )

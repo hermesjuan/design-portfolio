@@ -32,7 +32,19 @@ const HeroGroup = styled.div `
 `
 const JourneyGraph = styled.img `
   width: 100%;
+  @media (max-width: 700px) {
+    display: none;
+  } 
 `
+
+const ResponsiveJourneyGraph = styled.img `
+  display: none;
+  @media (max-width: 700px) {
+    display: block;
+    width: 100%;
+  }  
+`
+
 const Section = styled.div`
   margin: 50px auto;
   padding: 30px 50px;
@@ -111,6 +123,7 @@ const AboutMe = () => (
     <Section>
       <h3>My journey</h3>    
       <JourneyGraph src={require('../images/journey-graph.svg')} alt="Graph of my journey so far"/>
+      <ResponsiveJourneyGraph src={require('../images/responsive-journey-graph.svg')} alt="Graph of my journey so far"/>
     </Section>
     <Section>
       <Group>

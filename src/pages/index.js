@@ -1,11 +1,9 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 import CasesOdd from '../components/CasesOdd'
 import CasesEven from '../components/CasesEven'
-import Section from '../components/Section'
 
 const IndexPage = () => (
   <Layout>
@@ -20,7 +18,7 @@ const IndexPage = () => (
       </div>
     </div>    
     <div className="CasesGroup">
-      <a href="https://www.beta.cards" target="_blank"><CasesOdd
+      <a href="/beta"><CasesOdd
           title="Bootstrapping a methodolgy-based startup"
           image={require('../images/case-img-betacards.png')}
           /></a>

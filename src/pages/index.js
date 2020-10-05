@@ -42,6 +42,7 @@ const IndexPage = () => (
           /></a>
       </div>
   </Layout>  
+
 )
 
 export default IndexPage

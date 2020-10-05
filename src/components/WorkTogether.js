@@ -6,6 +6,7 @@ const Section = styled.div `
     margin: 80px 0px 40px 0px;
     background-color:#C6ECFD;
     padding: 160px;
+    text-align: center;
     h1 {
         font-size: 30px;
     }

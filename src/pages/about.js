@@ -6,8 +6,7 @@ import SEO from "../components/seo"
 import styled from "styled-components"
 
 const Hero = styled.div `
-  margin: 30px 50px;
-  max-width: 800px;
+  margin: 100px 90px;
   h1 {
     font-weight: 900;
     font-size: 52px;
@@ -26,9 +25,7 @@ const Hero = styled.div `
   }
 `
 const HeroGroup = styled.div `
-  margin: 0 auto;
-  max-width: 1000px;
-  margin: 100px 0 0px 0;
+  max-width: 800px;
 `
 const JourneyGraph = styled.img `
   width: 100%;

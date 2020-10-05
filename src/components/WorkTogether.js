@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Layout from "../components/layout"
 
 const Section = styled.div `
-    margin: 80px 0px 40px 0px;
+    margin: 0;
     background-color:#C6ECFD;
     padding: 160px;
     text-align: center;

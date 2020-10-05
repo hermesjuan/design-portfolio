@@ -2,11 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 
 const CaseBanner = styled.div `
+    margin: 0;
     width: 100%;
     height: 510px;
     position: relative;
     transition: 0.5s cubic-bezier(0.2, 0.8, 0.8, 1);
-    margin: 0;
     cursor: pointer;
     font-family: 'Raleway', sans-serif;
     img {
@@ -21,7 +21,7 @@ const CaseBanner = styled.div `
         position: absolute;
     }
     @media (max-width: 600px) {
-        margin-bottom: 90px;
+        margin-bottom: 12px;
         height: 100%;
         img {
             height: 200px;
@@ -44,10 +44,10 @@ const OverlayingBorder = styled.div `
     top: 0;
     bottom: 0;
     margin-left:auto;
-    border: 10px solid #C6ECFD;
+    border: 6px solid #C6ECFD;
     @media (max-width: 600px) {
         height: 100%;
-        border: 5px solid #C6ECFD;
+        border: 12px solid #C6ECFD;
     }
 `
 const Title = styled.h3 `

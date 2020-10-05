@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 import styled from "styled-components"
 
 const Hero = styled.div `
-  margin: 100px 90px;
+  margin: 150px 50px;
   h1 {
     font-weight: 900;
     font-size: 52px;
@@ -18,14 +18,17 @@ const Hero = styled.div `
     }
   }
   @media (max-width: 600px) {
-    margin: 30px 20px;
+    margin: 90px 20px;
     h1 {
-      font-size: 32px;
+      font-size: 30px;
     }
   }
 `
 const HeroGroup = styled.div `
-  max-width: 800px;
+  max-width: 1000px;
+  margin: 0 auto;
+  h1 { max-width: 800px; }
+  p { max-width: 800px; }
 `
 const JourneyGraph = styled.img `
   width: 100%;
@@ -33,7 +36,6 @@ const JourneyGraph = styled.img `
     display: none;
   } 
 `
-
 const ResponsiveJourneyGraph = styled.img `
   display: none;
   @media (max-width: 700px) {
@@ -41,7 +43,6 @@ const ResponsiveJourneyGraph = styled.img `
     width: 100%;
   }  
 `
-
 const Section = styled.div`
   margin: 50px auto;
   padding: 30px 50px;

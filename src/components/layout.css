@@ -20,10 +20,6 @@ body {
   font-feature-settings: "kern", "liga", "clig", "calt";
 }
 
-main {
-  margin-bottom: -90px;
-}
-
 a {
   color: black;
   font-family: 'Inconsolata', monospace;
@@ -32,7 +28,7 @@ a {
 
 .Hero{
   height: 790px;
-  margin: 30px 50px;
+  margin: 0 50px;
 }
 
 .HeroGroup {
@@ -72,7 +68,6 @@ a {
   text-decoration: none;
 }
 
-
 .Hero p a {
   cursor: pointer;
   font-family: 'Merriweather', serif;
@@ -96,15 +91,13 @@ a {
   color: #139CD7;
 }
 
-.Wtf:hover {
-  cursor: url('../images/wtf-cursor.png'), auto;
-}
+.Wtf:hover { cursor: url('../images/wtf-cursor.png'), auto; }
 
 footer {
   width: 100%;
   text-align: center;
   font-size: 12px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .SocialLinksGroup {
@@ -112,7 +105,7 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   max-width: 300px;
   margin: auto;
-  padding: 35px 200px;
+  padding: 35px 200px 10px 200px;
 }
 
 .SocialLinks {
@@ -126,30 +119,21 @@ footer {
 
 
 @media (max-width: 640px) {
-  main {
-    margin-bottom: 0;
-  }
+
   .Hero {
     margin: 60px 30px;
     height: auto;
   }
-  .HeroGroup {
-    padding: 50px 0px;
-  }
 
-  .Hero h1 {
-    font-size: 38px;;
-  }
+  .HeroGroup { padding: 50px 0px; }
 
-  .Hero p {
-    font-size: 16px;
-  }
+  .Hero h1 { font-size: 38px; }
 
-  .Hero p a {
-    font-size: 16px;
-  }
+  .Hero p { font-size: 16px; }
 
-  .ImageBehindTitle {
+  .Hero p a { font-size: 16px; }
+
+  .ImageBehindTitle { 
     width: 70%;
     right: 0;
   }
@@ -164,9 +148,10 @@ footer {
     padding: 20px 50px;
     grid-template-columns: 1fr;
   }
+
   .SocialLinks {    
     font-size: 12px;
     padding: 0 10px;
-  }
+  }  
   
 }

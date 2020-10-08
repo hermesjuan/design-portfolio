@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "styled-components"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const Hero = styled.div `
   margin: 150px 50px;
@@ -59,6 +60,17 @@ const Section = styled.div`
     color: inherit;
     font-family: inherit;
     font-weight: inherit;
+    text-decoration: none;
+    &:hover {
+      color: black;
+      cursor: url('../images/shovel.png'), auto;
+    }
+    h2 {
+      margin: 50px 30px 0 0;
+      font-size: 20px;
+      text-align: right;
+      color: #139CD7;
+    }
   }
   @media (max-width: 600px) {
     padding: 30px 20px;
@@ -122,6 +134,7 @@ const AboutMe = () => (
       <h3>My journey</h3>    
       <JourneyGraph src={require('../images/journey-graph.svg')} alt="Graph of my journey so far"/>
       <ResponsiveJourneyGraph src={require('../images/responsive-journey-graph.svg')} alt="Graph of my journey so far"/>
+        <AniLink paintDrip to="/deep-webrmes" hex="#C6ECFD"><h2>Dare to dig deeper?</h2></AniLink>
     </Section>
     <Section>
       <Group>
@@ -161,9 +174,8 @@ const AboutMe = () => (
         <Right>
           <h2>Contact Info</h2>
           <p>
-          hermes@hey.com)<br></br>    
+          hermes@hey.com<br></br>    
           linkedin.com/in/hermesjuan<br></br>
-          +595 981 887 3030<br></br>
           (Sioux Falls-US/Asuncion-PY)
           </p>
 
@@ -172,11 +184,12 @@ const AboutMe = () => (
           <strong>Software Engineer</strong><br></br>
           Universidad Nacional de Asunción - FPUNA<br></br>
           2010 - 2010<br></br>
-          <em>Unfinished</em><br></br>
+          <em className="Highlight">Unfinished 🤷‍♂️</em><br></br>
           <br></br>
           <strong>Graphic Desing B.D.</strong><br></br>
           Universidad Católica de Asunción - CyT<br></br>
           2012 - 2017<br></br>
+          <strong className="Highlight">Graduated 🎓</strong><br></br>
           </p>
 
           <h2>Strengths</h2>
@@ -187,6 +200,17 @@ const AboutMe = () => (
           Creative Problem Solver<br></br>
           With a Growth Mindset<br></br>
           Adaptable
+          </p>
+
+          <h2>I want to...</h2>
+          <p>
+          Get things done<br></br>    
+          Absorb uncertainty<br></br>
+          Persevere and focus<br></br>
+          Develop others<br></br>
+          Collaborate effectively<br></br>
+          Inspire commitment<br></br>
+          Learn new skills until i'm 100
           </p>
         </Right>
       </Group>      

@@ -24,7 +24,11 @@ a {
   color: black;
   font-family: 'Inconsolata', monospace;
   font-weight: 400;
+  cursor: pointer;
+  transition: 0.3s;
 }
+
+a:hover { color: #139CD7; }
 
 .Hero{
   height: 790px;
@@ -48,7 +52,7 @@ a {
 .Hero p {
   font-family: 'Merriweather', serif;
   font-weight: 300;
-  font-size: 13px;
+  font-size: 14px;
   max-width: 485px;
   line-height: 1.6;
 }
@@ -81,7 +85,7 @@ a {
 .Wtf {
   font-family: 'Merriweather', serif;
   font-weight: 300;
-  font-size: 13px;
+  font-size: 14px;
   max-width: 485px;
   line-height: 1.4;
   text-decoration: none !important;
@@ -117,7 +121,10 @@ footer {
   text-decoration: underline;
 }
 
+.Highlight {
+  background-color: #C6ECFD;
 
+}
 @media (max-width: 640px) {
 
   .Hero {

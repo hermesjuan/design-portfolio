@@ -49,7 +49,7 @@ const Section = styled.div`
   }
 `
 const Spacer = styled.div `
-    padding: 10px 0;
+    margin: 10px 0;
 `
 const TextAndImage = styled.div `
     display: grid;
@@ -63,7 +63,7 @@ const TextAndImage = styled.div `
 
 const Beta = () => (
     <Layout>
-        <SEO title="About me" />
+        <SEO title="Betacards" />
         <HeroImage src={require('../images/hero-case-img-beta.png')} alt="A box open of Betacards"></HeroImage>
         <Section>
             <h1>Bootstrapping a methodology-based startup</h1>
@@ -128,7 +128,7 @@ const Beta = () => (
             <Button text="← Go Home" link="/" />
         </Section>
         <OtherProjects 
-            link1="/"
+            link1="/muv"
             text1="Creating the MVP of the first ride-sharing app of Paraguay"
             image1={require('../images/case-img-muv.png')}
 

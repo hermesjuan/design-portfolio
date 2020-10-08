@@ -6,12 +6,12 @@ const CaseBanner = styled.div `
     width: 100%;
     height: 510px;
     position: relative;
-    transition: 0.5s cubic-bezier(0.2, 0.8, 0.8, 1);
+    transition: 0.2s cubic-bezier(0.2, 0.8, 0.8, 1);
     cursor: pointer;
     font-family: 'Raleway', sans-serif;
     img {
         left: 0;
-        z-index: -1;
+        z-index: -2;
         width: 50vw;
         height: 510px;
         top:0;
@@ -19,6 +19,10 @@ const CaseBanner = styled.div `
     }
     p svg {
         position: absolute;
+    }
+    &:hover {
+        background-color: rgba(198,236,253,0.8);
+        background-blend-mode: difference;
     }
     @media (max-width: 600px) {
         margin-bottom: 12px;
@@ -45,6 +49,11 @@ const OverlayingBorder = styled.div `
     bottom: 0;
     margin-left:auto;
     border: 6px solid #C6ECFD;
+    transition: 0.2s cubic-bezier(0.2, 0.8, 0.8, 1);
+    &:hover {
+        border: 6px solid white;
+        cursor: url('../images/shovel.png'), auto;
+    }
     @media (max-width: 600px) {
         height: 100%;
         border: 12px solid #C6ECFD;

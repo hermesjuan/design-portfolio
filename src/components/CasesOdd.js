@@ -18,6 +18,10 @@ const CaseBanner = styled.div `
         object-fit: cover;
     }
     p svg { position: absolute; }
+    &:hover {
+        background-color: rgba(198,236,253,0.8);
+        background-blend-mode: difference;
+    }
     @media (max-width: 600px) {
         margin-bottom: 12px;
         height: 100%;
@@ -43,6 +47,10 @@ const OverlayingBorder = styled.div `
     bottom: 0;
     margin-left:auto;
     border: 6px solid #C6ECFD;
+    transition: 0.5s cubic-bezier(0.2, 0.8, 0.8, 1);
+    &:hover {
+        border: 6px solid white;
+    }
     @media (max-width: 600px) {
         height: 100%;
         border: 12px solid #C6ECFD;
@@ -84,9 +92,7 @@ const Group = styled.div`
         align-items: baseline;
         img { grid-row:1; }
         div { grid-row:2; }
-
     }
-
 `
 
 const CasesOdd = props => (

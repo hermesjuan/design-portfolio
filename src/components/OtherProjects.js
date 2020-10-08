@@ -14,12 +14,15 @@ const Section = styled.div `
         font-size: 13px;
         text-transform: uppercase;
         margin-bottom: 40px;
-    }    
-    @media (max-width: 940px) {
-        h1 { font-size: 24px}
-        padding: 10px 20px;
     }
-    @media (max-width: 400px) {
+    @media (max-width: 940px) {
+        h1 { font-size: 15px}
+    }
+    @media (max-width: 845px) {
+        h1 { font-size: 18px}
+        padding: 30px 50px;
+    }
+    @media (max-width: 440px) {
         h1 { font-size: 14px}
     }
 `
@@ -27,7 +30,7 @@ const Group = styled.div `
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-column-gap: 20px;
-    @media (max-width: 940px) {
+    @media (max-width: 845px) {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, auto);
         grid-row-gap: 20px;
@@ -40,9 +43,15 @@ const Card = styled.a `
     display: grid;
     grid-template-columns: 1fr 0.7fr;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+    transition: 0.5s cubic-bezier(0.2, 0.8, 0.8, 1);
+    &:hover {   
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgb(0,0,0,0.1);
+    }
 `
 const Text = styled.div `
     margin: 8px 20px;
+    max-width: 300px;
     p {
         display: inline;
         padding-right: 15px;
@@ -53,7 +62,7 @@ const Image = styled.img `
     height: 100%;
     max-height: 170px;
     object-fit: cover;
-    @media (max-width: 740px) {
+    @media (max-width: 845px) {
         max-height: 120px;
     }
 `

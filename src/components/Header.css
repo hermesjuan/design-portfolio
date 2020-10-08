@@ -21,19 +21,12 @@
     /* justify-items: left; */
 }
 
-.HeaderGroup a {    
-    cursor: pointer;
-    transition: 0.3s;
+.HeaderGroup a {        
     justify-self: right;
 }
 
 .HeaderGroup a:nth-child(1) {    
     justify-self: left;
-}
-
-
-.HeaderGroup a:hover {    
-    color: #139CD7;
 }
 
 @media (max-width: 640px) {

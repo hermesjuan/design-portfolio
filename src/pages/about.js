@@ -20,8 +20,9 @@ const Hero = styled.div `
   }
   @media (max-width: 600px) {
     margin: 90px 20px;
+    line-height: 1.3;
     h1 {
-      font-size: 30px;
+      font-size: 34px;
     }
   }
 `
@@ -70,6 +71,10 @@ const Section = styled.div`
       font-size: 20px;
       text-align: right;
       color: #139CD7;
+      @media (max-width: 640px) {
+        margin: 50px auto;
+        text-align: center;
+      }
     }
   }
   @media (max-width: 600px) {
@@ -134,7 +139,7 @@ const AboutMe = () => (
       <h3>My journey</h3>    
       <JourneyGraph src={require('../images/journey-graph.svg')} alt="Graph of my journey so far"/>
       <ResponsiveJourneyGraph src={require('../images/responsive-journey-graph.svg')} alt="Graph of my journey so far"/>
-        <AniLink paintDrip to="/deep-webrmes" hex="#C6ECFD"><h2>Dare to dig deeper?</h2></AniLink>
+      <AniLink paintDrip to="/deep-webrmes" hex="#C6ECFD"><h2>Dare to dig deeper?</h2></AniLink>
     </Section>
     <Section>
       <Group>

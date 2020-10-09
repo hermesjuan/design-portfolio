@@ -18,16 +18,11 @@
     display: grid;
     grid-template-columns: repeat(3, auto);
     align-items: center;
-    /* justify-items: left; */
 }
 
-.HeaderGroup a {        
-    justify-self: right;
-}
+.HeaderGroup a { justify-self: right; }
 
-.HeaderGroup a:nth-child(1) {    
-    justify-self: left;
-}
+.HeaderGroup a:nth-child(1) { justify-self: left; }
 
 @media (max-width: 640px) {
     .Header {

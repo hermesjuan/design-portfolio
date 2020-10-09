@@ -6,6 +6,7 @@ import Button from "../components/Button"
 import styled from "styled-components"
 import OtherProjects from '../components/OtherProjects'
 
+
 const HeroImage = styled.img `
     width: 100%;
     max-height: 700px;
@@ -30,8 +31,8 @@ const Section = styled.div`
     font-family: Merriweather;
     font-style: normal;
     font-weight: 300;
-    font-size: 12px;
-    line-height: 1.4;
+    font-size: 13px;
+    line-height: 1.5;
     max-width: 780px;
   }
   a {
@@ -43,6 +44,8 @@ const Section = styled.div`
   @media (max-width: 780px) {
     padding: 30px 20px;
     img { width: 100%; }
+    h1 { line-height: 1.2; }
+    p { line-height: 1.8;}
   }
   @media (max-width: 640px){
       h1 { font-size: 34px; }
@@ -132,11 +135,11 @@ const Beta = () => (
             text1="Creating the MVP of the first ride-sharing app of Paraguay"
             image1={require('../images/case-img-muv.png')}
 
-            link2="/"
+            link2="/devpost"
             text2="Researching how developers search for jobs"
             image2={require('../images/case-img-devpost.png')}
             
-            link3="/"
+            link3="http://eklf.com.py/"
             text3="Rebranding for a young law firm"
             image3={require('../images/case-img-eklf.png')}  
 

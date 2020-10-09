@@ -7,11 +7,8 @@ const Wrapper = styled.div `
     font-weight: bold;
     font-size: 14px;
     text-align: center;
-    a {
-        text-decoration: none;
-    }
+    a { text-decoration: none; }
 `
-
 const StyledButton = styled.div `
     background: #C6ECFD;
     width: 160px;
@@ -23,7 +20,6 @@ const StyledButton = styled.div `
         box-shadow: 0 0 20px rgb(200,230,250,1);
     }
 `
-
 
 const Button = props => (
     <Wrapper>

@@ -100,11 +100,11 @@ const Beta = () => (
             text1="Bootstrapping a methodology-based startup"
             image1={require('../images/case-img-betacards.png')}
 
-            link2="/"
+            link2="/devpost"
             text2="Researching how developers search for jobs"
             image2={require('../images/case-img-devpost.png')}
             
-            link3="/"
+            link3="http://eklf.com.py/"
             text3="Rebranding for a young law firm"
             image3={require('../images/case-img-eklf.png')}  
 

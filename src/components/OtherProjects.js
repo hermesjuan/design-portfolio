@@ -15,16 +15,12 @@ const Section = styled.div `
         text-transform: uppercase;
         margin-bottom: 40px;
     }
-    @media (max-width: 940px) {
-        h1 { font-size: 15px}
-    }
+    @media (max-width: 940px) { h1 { font-size: 15px} }
     @media (max-width: 845px) {
         h1 { font-size: 18px}
-        padding: 30px 50px;
+        padding: 30px 20px;
     }
-    @media (max-width: 440px) {
-        h1 { font-size: 14px}
-    }
+    @media (max-width: 440px) { h1 { font-size: 14px} }
 `
 const Group = styled.div `
     display: grid;
@@ -50,7 +46,7 @@ const Card = styled.a `
     }
 `
 const Text = styled.div `
-    margin: 8px 20px;
+    margin: 10px 20px;
     max-width: 300px;
     p {
         display: inline;
@@ -62,40 +58,41 @@ const Image = styled.img `
     height: 100%;
     max-height: 170px;
     object-fit: cover;
-    @media (max-width: 845px) {
-        max-height: 120px;
-    }
+    @media (max-width: 845px) { max-height: 120px; }
 `
-
 
 const OtherProjects = props => (
     <Section>
-    <h3>SEE MORE PROJECTS</h3>
+        <h3>SEE MORE PROJECTS</h3>
         <Group>
+
             <Card href={props.link1}>
                 <Text>
                     <h1>{props.text1}</h1>            
                     <p>Read more</p>
-                    <img src={require('../images/arrow.svg')}alt="arrow"></img>
+                    <img src={require('../images/arrow.svg')} alt="arrow"></img>
                 </Text>
-            <Image src={props.image1} alt={props.text1}></Image>
+                <Image src={props.image1} alt={props.text1}/>
             </Card>
+
             <Card href={props.link2}>
                 <Text>
                     <h1>{props.text2}</h1>            
                     <p>Read more</p>
-                    <img src={require('../images/arrow.svg')}alt="arrow"></img>
+                    <img src={require('../images/arrow.svg')} alt="arrow"></img>
                 </Text>
-            <Image src={props.image2} alt={props.text2}></Image>
+                <Image src={props.image2} alt={props.text2}/>
             </Card>
+
             <Card href={props.link3}>
                 <Text>
                     <h1>{props.text3}</h1>            
                     <p>Read more</p>
-                    <img src={require('../images/arrow.svg')}alt="arrow"></img>
+                    <img src={require('../images/arrow.svg')} alt="arrow"></img>
                 </Text>
-            <Image src={props.image3} alt={props.text3}></Image>
+                <Image src={props.image3} alt={props.text3}/>
             </Card>
+            
         </Group>
     </Section>
 )

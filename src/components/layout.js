@@ -31,11 +31,16 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         <footer>
           <WorkTogether></WorkTogether>
-          <div className="SocialLinksGroup">
-            {staticdata.cells.map(cell => (
-              <a href={cell.url} target="_blank" class="SocialLinks">{cell.title}</a>
-            ))}
+          <div className="FooterMessage">
+          {/* <!-- Thank you Stephen Dubner for this awesome message --> */}
+            <h4>Take care, and if you can, someone else.</h4>
+            <img src={require('../images/raised-hands.svg')}></img>            
           </div>
+          <div className="SocialLinksGroup">
+              {staticdata.cells.map(cell => (
+                <a href={cell.url} target="_blank" class="SocialLinks">{cell.title}</a>
+              ))}
+            </div>
           Built by Hermes © {new Date().getFullYear()}, with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>

@@ -126,7 +126,7 @@ const Beta = () => (
             text2="Creating the MVP of the first ride-sharing app of Paraguay"
             image2={require('../images/case-img-muv.png')}
             
-            link3="/"
+            link3="http://eklf.com.py/"
             text3="Rebranding for a young law firm"
             image3={require('../images/case-img-eklf.png')}  
 

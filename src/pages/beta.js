@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/Button"
@@ -13,6 +13,7 @@ const Beta = () => (
     <Layout>
         <SEO title="Betacards" />
         <HeroImage src={require('../images/hero-case-img-beta.png')} alt="A box open of Betacards"/>
+
         <CasesSection>
             <h1>Bootstrapping a methodology-based startup</h1>
             <h2>Project Overview</h2>
@@ -70,9 +71,11 @@ const Beta = () => (
             
             <p>It was a really good 360 experience of starting a business by making things that didn't scale, discovering a potential market, and then put it on a growth path. We don't plan to look for investments since with some the current margins we could start making a profit in less than a year if we reach our sales goal, that aren't that far fetched.</p>
         </CasesSection>
+
         <CasesSection>
             <Button text="← Go Home" link="/" />
         </CasesSection>
+
         <OtherProjects 
             link1="/muv"
             text1="Creating the MVP of the first ride-sharing app of Paraguay"

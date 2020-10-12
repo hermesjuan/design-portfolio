@@ -4,14 +4,36 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/Button"
 import OtherProjects from '../components/OtherProjects'
-import HeroImage from '../components/HeroImage'
+// import HeroImage from '../components/HeroImage'
 import CasesSection from '../components/CasesSection'
+import styled from 'styled-components'
+import Img from "gatsby-image/withIEPolyfill"
 
+// Changing from img to div
+const HeroImage = styled.div ` 
+    img {
+        width: 100%;
+        height: auto;
+        max-height: 700px;
+    }
+    @media (max-width: 640px) {
+        img { height: 300px; }
+    }
+`
 
-const Muv = () => (
+export default ({data}) => (
     <Layout>
         <SEO title="MUV" />
-        <HeroImage src={require('../images/hero-case-img-muv.jpg')} alt="Mockup of MUV's app screen"></HeroImage>
+        <HeroImage> 
+            <Img 
+                fluid={data.file.childImageSharp.fluid} 
+                objectFit="cover"
+                objectPosition="50% 50%"
+                alt="Screens of the UI of the MUV App"
+            />
+            {/* <img src={require('../images/hero-case-img-muv.jpg')} alt="Mockup of MUV's app screen"/> */}
+        </HeroImage>
+
         <CasesSection>
             <h1>Creating the MVP of the first ride-sharing app of Paraguay</h1>
             <h2>Project Overview</h2>
@@ -58,4 +80,18 @@ const Muv = () => (
     </Layout>
 )
 
-export default Muv
+// export default Muv
+
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "hero-case-img-muv.jpg" }) {
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        # Makes it trivial to update as your page's design changes.
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

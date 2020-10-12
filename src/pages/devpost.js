@@ -11,7 +11,8 @@ import CasesSection from '../components/CasesSection'
 const Devpost = () => (
     <Layout>
         <SEO title="Devpost" />
-        <HeroImage src={require('../images/hero-case-img-devpost.jpg')} alt="A mockup of Devpost's website"></HeroImage>
+        <HeroImage src={require('../images/hero-case-img-devpost.jpg')} alt="A mockup of Devpost's website"/>
+
         <CasesSection>
             <h1>Researching how developers search for new jobs</h1>
             <h2>Project Overview</h2>

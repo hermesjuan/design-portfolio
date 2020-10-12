@@ -20,14 +20,7 @@ module.exports = {
         trackingId: "UA-178192384-1",
       },
     },    
-    `gatsby-plugin-transition-link`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: path.join(__dirname, `src`, `images`),
-      },
-    },
+    `gatsby-plugin-transition-link`,    
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-sharp`,

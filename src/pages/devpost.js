@@ -1,17 +1,26 @@
 import React from 'react'
-
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/Button"
+import Img from "gatsby-image/withIEPolyfill"
+// Components made for the Cases pages, tweaks to the layout should be made there
 import OtherProjects from '../components/OtherProjects'
 import HeroImage from '../components/HeroImage'
 import CasesSection from '../components/CasesSection'
 
 
-const Devpost = () => (
+export default ({data}) => (
     <Layout>
         <SEO title="Devpost" />
-        <HeroImage src={require('../images/hero-case-img-devpost.jpg')} alt="A mockup of Devpost's website"/>
+        <HeroImage> 
+            <Img 
+                fluid={data.file.childImageSharp.fluid} 
+                objectFit="cover"
+                objectPosition="50% 50%"
+                alt="Computer screen with Devpost webpage on it"
+            />
+        </HeroImage>
 
         <CasesSection>
             <h1>Researching how developers search for new jobs</h1>
@@ -22,35 +31,35 @@ const Devpost = () => (
 
             <h2>My Contributions</h2>
             <p>I was in charge of turning this basic idea we had into something tangible.  I acted as a project and product manager making the firsts prototypes, developing the methodology itself with the other co-founders, branding the product, talking to users, explore business models that could work and building a community around the project. Pretty much everything involved in moving this idea forward. We didn't have any initial investing, so we had to bootstrap it.</p>
-            <img src={require('../images/devpost-intro.jpg')}></img>         
+            <img src={require('../images/devpost-intro.jpg')} alt="Startup Institute and Devpost logos side by side"></img>         
         </CasesSection>
         <CasesSection>
             <h2>Description</h2>
             <p>The research pipeline was designed like this: First, gather all the information relevant about developers salaries in the US. Then send some surveys and schedule interviews. After that identify trends, create user personas, and make a presentation to the product manager with our finds </p>
-            <img src={require('../images/devpost-process.svg')}></img> 
+            <img src={require('../images/devpost-process.svg')} alt="The process: research, surveys, interviews, identify trends, create user personas and present findings to Devpost"></img> 
             
             <p>The first survey was meant to get a sense of the priorities of developers looking for new jobs and to spot people open to be interviewed. It was just 7 questions in order to maximize the response and paint a first picture of the dev job hunting scene. After that i sent some follow up mails to try to get some one on one calls to show the current state of the product and finding some areas of improvement.</p>
             
             <p>Then we started to map the concerns and interests of the people we had interviewed. We used some post-its in the wall and got this big picture, differentiating senior, mid-level and junior developers.</p>
             
-            <img src={require('../images/devpost-anotations.jpg')}></img>
+            <img src={require('../images/devpost-anotations.jpg')} alt="Anotations based on the answers of the survey"></img>
             
 
             <p><strong>With that information i came up with this User Persona.</strong></p>
-            <img src={require('../images/devpost-user-persona.png')}></img>
+            <img src={require('../images/devpost-user-persona.png')} alt="User Persona of a Mid-level Developer named Ryan"></img>
             
             
             <p><strong>This led us to rethink some of the aspects of the current state of the Team Pages.</strong></p>
             
-            <img src={require('../images/devpost-evolution-1.png')}></img>
+            <img src={require('../images/devpost-evolution-1.png')} alt ="Old Landing page vs proposal 1"></img>
             
             <p>First, trying to achieve a cleaner look in the landing page. Most of the developers we interview had a pretty clear sense of what they were looking for. So instead of showing some of the companies listed looking for hires, we gave more importance to the search process.</p>
 
-            <img src={require('../images/devpost-evolution-2.png')}></img>
+            <img src={require('../images/devpost-evolution-2.png')} alt ="Old Landing page vs proposal 2"></img>
             
             <p>We moved from a pop-up window to a more streamlined process of answering questions about location, the positions they were interested in, what level of experience they had, their tech stack and finally the company size. At the moment of this presentation we weren't sure if it was best to input salary expectative so we initially left it out. </p>
 
-            <img src={require('../images/devpost-evolution-3.png')}></img>
+            <img src={require('../images/devpost-evolution-3.png')} alt ="Old Landing page vs proposal 3"></img>
             
             <p>And finally the results page. We decided to give a direct overview of the company with the best match. Showing the positions available, then a quick view of the company's interview process, internships, benefits, among other things. Also a section specifically for the Tech stack, something during interviews was particularlly important to more senior developers. We also added a section where members of the company share what they thought of working there, and lastly other results that had fewer matches in the search.</p>
         </CasesSection>
@@ -84,4 +93,15 @@ const Devpost = () => (
     </Layout>
 )
 
-export default Devpost
+// This is a query that uses the plugin gatsby-iamge in order to optimize them
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "hero-case-img-devpost.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

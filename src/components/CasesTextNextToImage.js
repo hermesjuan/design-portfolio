@@ -12,5 +12,4 @@ const CasesTextNexToImage = styled.div `
 
 `
 
-
 export default CasesTextNexToImage

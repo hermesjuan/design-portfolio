@@ -3,16 +3,25 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/Button"
+import Img from "gatsby-image/withIEPolyfill"
+// Components made for the Cases pages, tweaks to the layout should be made there
 import OtherProjects from '../components/OtherProjects'
 import HeroImage from '../components/HeroImage'
 import CasesSection from '../components/CasesSection'
 import CasesTextNexToImage from '../components/CasesTextNextToImage'
 
 
-const Beta = () => (
+export default ({data}) => (
     <Layout>
         <SEO title="Betacards" />
-        <HeroImage src={require('../images/hero-case-img-beta.png')} alt="A box open of Betacards"/>
+        <HeroImage> 
+            <Img 
+                fluid={data.file.childImageSharp.fluid} 
+                objectFit="cover"
+                objectPosition="50% 50%"
+                alt="A box of Betacards"
+            />
+        </HeroImage>
 
         <CasesSection>
             <h1>Bootstrapping a methodology-based startup</h1>
@@ -25,7 +34,7 @@ const Beta = () => (
             <h2>My Contributions</h2>
             <p>I was in charge of turning this basic idea we had into something tangible.  I acted as a project and product manager making the firsts prototypes, developing the methodology itself with the other co-founders, branding the product, talking to users, explore business models that could work and building a community around the project. Pretty much everything involved in moving this idea forward. We didn't have any initial investing, so we had to bootstrap it.</p>
             
-            <img src={require('../images/betacards-being-used.png')}></img>
+            <img src={require('../images/betacards-being-used.png')} alt="The cards and people using them"></img>
             
 
             <h2>Description</h2>
@@ -36,14 +45,14 @@ const Beta = () => (
                     <p>It all started with some workshops we did at Miut to help clients get started with their new ideas for business or other kinds of projects. We identified that some steps always repeated no matter what the project was, so we figured that we could create some sort of system that contemplated all of those steps. It got us thinking "what if these steps are visualized by some sort of cards or board? What if we create a game out of it?". Me and Rodrigo (my co-founder and primary shareholder of Miut) started prototyping Betacards with some post-its on the wall, discussing what the main areas would be, and started calling them "Mundos" which is spanish for Worlds. We started seeing some potential.</p>
                     
                 </div>
-                <img src={require('../images/first-version-of-betacards.png')}></img>
+                <img src={require('../images/first-version-of-betacards.png')} alt ="First version of the cards: just some post-its on the wall"></img>
             </CasesTextNexToImage>
             
 
             <h3>Experiments</h3>
             <p>Not too long after we made our first test. We printed some cards to try the methodology in a workshop we were invited to. That test went much better than we expected. We were able to gather a lot of feedback (since it was really an early version of the idea) but what surprised us was how useful it was for the people using it. That was the main reason we decided to give the project more attention and resources (by resources i mean mostly time, not necessarily money). Also it gave us some hints that it may not end up being a game, more like a tool, but playful.</p>
             
-            <img src={require('../images/first-betacards-printed.png')}></img>
+            <img src={require('../images/first-betacards-printed.png')} alt ="First printed version of the cards lying on the floor"></img>
             
 
             <h3>Building a community</h3>
@@ -51,7 +60,7 @@ const Beta = () => (
             
             <p>Even now we try to keep a close and personal link to every member of the Beta community, sending updates of Beta but also listening to what are their concerns and always trying to get feedback about the methodology.</p>
             
-            <img src={require('../images/early-community-building-of-beta.png')}></img>
+            <img src={require('../images/early-community-building-of-beta.png')} alt ="People from Rotterdam in one of the early workshops we did in Europe"></img>
             
 
             <h3>Viability</h3>
@@ -94,4 +103,15 @@ const Beta = () => (
     </Layout>
 )
 
-export default Beta
+// This is a query that uses the plugin gatsby-iamge in order to optimize them
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "hero-case-img-beta.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

@@ -1,7 +1,7 @@
 .Header {
     position: fixed;
     width: 100%;
-    padding: 25px 0px;
+    padding: 25px 0;
     z-index: 100;
     transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
@@ -20,9 +20,16 @@
     align-items: center;
 }
 
-.HeaderGroup a { justify-self: right; }
+.HeaderGroup a {
+    justify-self: right;
+}
 
 .HeaderGroup a:nth-child(1) { justify-self: left; }
+
+@media (max-width: 1050px) {
+    .HeaderGroup img { margin-left: 50px; }
+    .HeaderGroup a { margin-right: 50px; }
+}
 
 @media (max-width: 640px) {
     .Header {

@@ -1,18 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Image = styled.img `
-    width: 100%;
-    max-height: 700px;
-    object-fit: cover;
-    text-align: center;
+const HeroImage = styled.div ` 
+    img {
+        width: 100%;
+        height: auto;
+        max-height: 700px;
+    }
     @media (max-width: 640px) {
-        height: 300px;
+        img { height: 300px; }
     }
 `
-
-const HeroImage = props => (
-    <Image src={props.src} alt={props.alt}/>
-)
 
 export default HeroImage

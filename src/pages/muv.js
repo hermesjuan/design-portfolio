@@ -1,25 +1,14 @@
 import React from 'react'
-
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/Button"
-import OtherProjects from '../components/OtherProjects'
-// import HeroImage from '../components/HeroImage'
-import CasesSection from '../components/CasesSection'
-import styled from 'styled-components'
 import Img from "gatsby-image/withIEPolyfill"
+// Components made for the Cases pages, tweaks to the layout should be made there
+import OtherProjects from '../components/OtherProjects'
+import HeroImage from '../components/HeroImage'
+import CasesSection from '../components/CasesSection'
 
-// Changing from img to div
-const HeroImage = styled.div ` 
-    img {
-        width: 100%;
-        height: auto;
-        max-height: 700px;
-    }
-    @media (max-width: 640px) {
-        img { height: 300px; }
-    }
-`
 
 export default ({data}) => (
     <Layout>
@@ -31,7 +20,6 @@ export default ({data}) => (
                 objectPosition="50% 50%"
                 alt="Screens of the UI of the MUV App"
             />
-            {/* <img src={require('../images/hero-case-img-muv.jpg')} alt="Mockup of MUV's app screen"/> */}
         </HeroImage>
 
         <CasesSection>
@@ -45,7 +33,7 @@ export default ({data}) => (
             <h2>My Contributions</h2>
             <p>I was in charge of the initial branding and the design of the first screens. One constraint was that they were using a template for the app so from a UX perspective i didn't have much to change in the interactions, and which screens, so it was more of a aesthethics addition, some customization and a goal of making it feel more local to the users</p>
             
-            <img src={require('../images/muv-ui-muckups.jpg')}></img>
+            <img src={require('../images/muv-ui-muckups.jpg')} alt="Mockups of the App"></img>
             
 
             <h2>Description</h2>
@@ -80,14 +68,11 @@ export default ({data}) => (
     </Layout>
 )
 
-// export default Muv
-
+// This is a query that uses the plugin gatsby-iamge in order to optimize them
 export const query = graphql`
   query {
     file(relativePath: { eq: "hero-case-img-muv.jpg" }) {
       childImageSharp {
-        # Specify the image processing specifications right in the query.
-        # Makes it trivial to update as your page's design changes.
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }

@@ -12,7 +12,8 @@ const IndexPage = () => (
       <div className="HeroGroup">
       <img className="ImageBehindTitle" src={require('../images/Hand.svg')} alt="Hand"></img>
        <h1>Hey! I'm looking for the next step in growing my career in tech</h1>
-       <p>After teasing coding for the past +5 years while being a designer i’m looking to join a tech company to keep growing on my technical side, while adding value as a designer. Either as a <a className="Wtf">senior generalist designer</a>, mid-level UI/UX or a junior front-end developer, i truly believe i can add value to any company while growing within the role trusted in me.</p>
+       <p>I am on a quest trying to find what I want to do with my life. How I make a living is a big part of it. I made a career in design going from advertising, to branding and also freelancing and starting projects as an entrepreneur in Asunción (PY). The findings of my quest so far, shows that whatever I do, I want it to be involved with technology.</p>
+       <p>Looking at what comes next on this quest, I would like to have the experience of a mature tech ecosystem, being part of a company where I can, not only grow as a UI, Product designer or a <a className="Wtf">Generalist designer</a> (even as a Front-end dev with the right mentorship), but also to better understand how companies like this work. And eventually transfer some of that knowledge back to my home country.</p>
        <p>You can learn a little more <AniLink paintDrip to="/about" hex="#C6ECFD">about me</AniLink> or keep scrolling to see some of the work i’ve done.</p>        
       </div>
     </div>    

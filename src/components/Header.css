@@ -27,13 +27,13 @@
 .HeaderGroup a:nth-child(1) { justify-self: left; }
 
 @media (max-width: 1050px) {
-    .HeaderGroup img { margin-left: 50px; }
-    .HeaderGroup a { margin-right: 50px; }
+    .HeaderGroup img { margin-left: 30px; }
+    .HeaderGroup a { margin-right: 20px; }
 }
 
 @media (max-width: 640px) {
     .Header {
-        padding: 20px;
+        padding: 20px 0;
         width: 90vw;
     }
 }

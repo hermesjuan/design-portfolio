@@ -25,10 +25,15 @@ const OverlayingBorder = styled.div `
     bottom: 0;
     outline: 6px solid #C6ECFD;
     transition: 0.2s cubic-bezier(0.2, 0.8, 0.8, 1);
-    @media (max-width: 900px) {
-        margin: 0;
-        height: 100%;
-        outline: 6px solid #C6ECFD;
+    @media (max-width: 1050px) {
+        max-width: 90%;
+        height: 240px;
+        outline: 5px solid #C6ECFD;
+    }
+    @media (max-width: 640px) {
+        max-width: 80%;
+        height: 80%;
+        outline: 4px solid #C6ECFD;
     }
 `
 const Group = styled.div`
@@ -37,13 +42,14 @@ const Group = styled.div`
     grid-template-rows: 400px;
     align-items: center;
     justify-items: center;
-    @media (max-width: 900px) {
-        grid-template-rows: 220px;
+    @media (max-width: 1050px) {
+        grid-template-rows: 320px;
     }
-    @media (max-width: 600px) {
+    @media (max-width: 640px) {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, auto);
         align-items: baseline;
+        padding-bottom: 70px;
     }
 
 `
@@ -55,7 +61,7 @@ const Image = styled.div `
     width: 100%;
     height: 100%;
     @media (max-width: 640px) {            
-        height: 240px;
+        height: 220px;
         grid-column: 1;
     }
 `
@@ -69,8 +75,8 @@ const Text = styled.div `
     h3 {
         font-size: 38px;
         font-weight: 900;
-         @media (max-width: 900px) {  font-size: 24px; }
-        @media (max-width: 640px) { font-size: 26px; }
+        @media (max-width: 1050px) {  font-size: 32px; }
+        @media (max-width: 640px) { font-size: 25px; }
     }
     div {
         margin-bottom: 10px;
@@ -79,11 +85,12 @@ const Text = styled.div `
             padding-right: 10px;
         }
     }
-    @media (max-width: 900px) {
-        max-width: 300px;
-        padding: 10px 20px;
+    @media (max-width: 1050px) {
+        max-width: 420px;
     }
     @media (max-width: 640px) {
+        margin-left: 20px;
+        max-width: 80%;
         grid-column: 1;
         grid-row: 2;
     }

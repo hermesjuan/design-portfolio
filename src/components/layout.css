@@ -30,6 +30,13 @@ a {
 
 a:hover { color: #139CD7; }
 
+p {
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
 .Hero{
   height: 790px;
   margin: 0 50px;
@@ -45,17 +52,11 @@ a:hover { color: #139CD7; }
 .Hero h1 {
   font-weight: 900;
   font-size: 60px;
-  max-width: 710px;
+  max-width: 780px;
   line-height: 1.1;
 }
 
-.Hero p {
-  font-family: 'Merriweather', serif;
-  font-weight: 300;
-  font-size: 14px;
-  max-width: 485px;
-  line-height: 1.6;
-}
+.Hero p { max-width: 650px; }
 
 .ImageBehindTitle {
   position: absolute;

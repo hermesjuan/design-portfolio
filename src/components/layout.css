@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Merriweather:wght@400;700&family=Raleway:wght@400;800;900&display=swap');
+@import url("//hello.myfonts.net/count/3c725a");
+
 
 html {
   -ms-text-size-adjust: 100%;
@@ -37,6 +39,7 @@ p {
   line-height: 1.6;
 }
 
+
 .Hero{
   height: 790px;
   margin: 0 50px;
@@ -49,14 +52,14 @@ p {
   position: relative;
 }
 
-.Hero h1 {
+h1 {  
   font-weight: 900;
   font-size: 60px;
   max-width: 780px;
   line-height: 1.1;
 }
 
-.Hero p { max-width: 650px; }
+.Hero p { max-width: 500px; }
 
 .ImageBehindTitle {
   position: absolute;

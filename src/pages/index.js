@@ -12,14 +12,13 @@ const IndexPage = () => (
       <div className="HeroGroup">
       <img className="ImageBehindTitle" src={require('../images/Hand.svg')} alt="Hand"></img>
        <h1>Hey! I'm looking for the next step in growing my career in tech</h1>
-       <p>I am on a quest trying to find what I want to do with my life. How I make a living is a big part of it. I made a career in design going from advertising, to branding and also freelancing and starting projects as an entrepreneur in Asunción (PY). The findings of my quest so far, shows that whatever I do, I want it to be involved with technology.</p>
-       <p>Looking at what comes next on this quest, I would like to have the experience of a mature tech ecosystem, being part of a company where I can, not only grow as a UI, Product designer or a <a className="Wtf">Generalist designer</a> (even as a Front-end dev with the right mentorship), but also to better understand how companies like this work. And eventually transfer some of that knowledge back to my home country.</p>
+       <p>I’m looking to join an established tech company to keep growing on my career either as a <a className="Wtf">Senior Generalist designer,</a> mid-level UI/UX or a junior front-end developer. </p>
        <p>You can learn a little more <AniLink paintDrip to="/about" hex="#C6ECFD">about me</AniLink> or keep scrolling to see some of the work i’ve done.</p>        
       </div>
     </div>    
 
     <div className="StuffIDid">
-      <h3>This is some of the stuff i did</h3>
+      <h3>Some of the stuff i've done</h3>
       <img src={require('../images/stuff-i-did-pointer.svg')}></img>
     </div>
 

@@ -7,21 +7,12 @@ import styled from "styled-components"
 
 const Hero = styled.div `
   margin: 150px 50px 100px 50px;  
-  h1 {
-    font-weight: 900;
-    font-size: 52px;
-    line-height: 1.1;
-  }
   @media (max-width: 800px) {
-    h1 {
-      font-size: 42px;
-    }
+    h1 { font-size: 42px; }
   }
   @media (max-width: 600px) {
     margin: 90px 20px;
-    h1 {
-      font-size: 30px;
-    }
+    h1 { font-size: 30px; }
   }
 `
 const HeroGroup = styled.div `
@@ -89,7 +80,8 @@ const Callout = styled.div `
   }
   strong {
     font-family: 'Raleway', sans-serif;
-    font-size: 15px;
+    font-size: 18px;
+    line-height: 2;
   }
 `
   const TLDR = styled.h2 `

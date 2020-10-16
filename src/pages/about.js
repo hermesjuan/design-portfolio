@@ -7,37 +7,25 @@ import styled from "styled-components"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const Hero = styled.div `
-  margin: 150px 50px;
-  h1 {
-    font-weight: 900;
-    font-size: 52px;
-    line-height: 1.1;
-  }
-  p { line-height: 1.5; }
+  margin: 150px 50px 50px 50px;
   @media (max-width: 800px) {
-    h1 {
-      font-size: 42px;
-    }
+    h1 { font-size: 42px; }
   }
   @media (max-width: 600px) {
     margin: 90px 20px;
     line-height: 1.3;
-    h1 {
-      font-size: 34px;
-    }
+    h1 { font-size: 34px; }
   }
 `
 const HeroGroup = styled.div `
   max-width: 1000px;
   margin: 0 auto;
   h1 { max-width: 800px; }
-  p { max-width: 720px; }
+  p { max-width: 600px; }
 `
 const JourneyGraph = styled.img `
   width: 100%;
-  @media (max-width: 700px) {
-    display: none;
-  } 
+  @media (max-width: 700px) {display: none; } 
 `
 const ResponsiveJourneyGraph = styled.img `
   display: none;
@@ -62,7 +50,6 @@ const Section = styled.div`
     color: inherit;
     font-family: inherit;
     font-weight: inherit;
-    text-decoration: none;
     h2 {
       margin: 50px 30px 0 0;
       font-size: 20px;
@@ -74,9 +61,7 @@ const Section = styled.div`
       }
     }
   }
-  @media (max-width: 600px) {
-    padding: 30px 20px;
-  }
+  @media (max-width: 600px) {  padding: 30px 20px; }
 `
 const Position = styled.h3 `
   font-family: Merriweather;
@@ -117,8 +102,7 @@ const Group = styled.div `
   margin-bottom: 100px;
   @media (max-width: 600px) {
     grid-template-columns: 1fr;
-  margin-bottom: 20px;
-
+   margin-bottom: 20px;
   }
 `
 
@@ -128,15 +112,15 @@ const AboutMe = () => (
     <SEO title="About me" />
     <Hero>
       <HeroGroup>
-        <h1>In some tables i’m the creative guy, in others the tech guy. In all of them an all around good, hard working guy.</h1>
-        <p>I'm not good with labels, but there is no denying how useful they can be, so at the end of the day i find the most practical way of calling myself is a generalist designer. Professionally navigated through advertising, branding, UI,  innovation and entrepreneurship. Here are more details about it:</p>
+        <h1>I like design, music, photography and everything tech related.</h1>
+        <p>Since high school i've been drawn to technology and everything it can accomplish. At first i thought the only way to get in the field was by becoming a programmer. Then i realized that design had a ton to do with technology, and from that point it was clear to me that i wanted to be wherever technology and design overlap. Here is how i got here:</p>
       </HeroGroup>
     </Hero>    
     <Section>
       <h3>My journey</h3>    
       <JourneyGraph src={require('../images/journey-graph.svg')} alt="Graph of my journey so far"/>
       <ResponsiveJourneyGraph src={require('../images/responsive-journey-graph.svg')} alt="Graph of my journey so far"/>
-      <AniLink paintDrip to="/deep-webrmes" hex="#C6ECFD"><h2>Dare to dig deeper?</h2></AniLink>
+      <AniLink paintDrip to="/deep-webrmes" hex="#C6ECFD">Dare to dig deeper?</AniLink>
     </Section>
     <Section>
       <Group>

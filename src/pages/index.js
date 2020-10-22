@@ -47,9 +47,17 @@ const IndexPage = () => (
         />
       </AniLink>
 
-      <a href="http://eklf.com.py/" target="_blank">
+      <AniLink paintDrip to="/sepsa" hex="#C6ECFD">
         <Cases
           textColumn="2"
+          title="Rethinking a web after rethinking a company"
+          image={require('../images/case-img-sepsa.png')}
+        />
+      </AniLink>
+
+      <a href="http://eklf.com.py/" target="_blank">
+        <Cases
+          textColumn="1"
           title="Rebranding of a young law firm"
           image={require('../images/case-img-eklf.png')}
           right
@@ -58,7 +66,7 @@ const IndexPage = () => (
 
       <a href="https://www.notion.so/Memorize-App-Dipped-my-toes-in-SwiftUI-during-lockdown-e4ce4a8c6643471d968b9a03b34bf2f1" target="_blank">
         <Cases
-          textColumn="1"
+          textColumn="2"
           title="Dipped my toes in SwiftUI during lockdown"
           image={require('../images/case-img-memorize.png')}
           />

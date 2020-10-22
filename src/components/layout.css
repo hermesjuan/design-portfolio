@@ -148,7 +148,7 @@ footer {
 .SocialLinksGroup {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  max-width: 300px;
+  max-width: 130px;
   margin: auto;
   padding: 35px 200px 10px 200px;
 }

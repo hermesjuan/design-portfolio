@@ -37,9 +37,15 @@ const Layout = ({ children }) => {
             <img src={require('../images/raised-hands.svg')}></img>            
           </div>
           <div className="SocialLinksGroup">
-              {staticdata.cells.map(cell => (
-                <a href={cell.url} target="_blank" class="SocialLinks">{cell.title}</a>
-              ))}
+            <a href="https://www.linkedin.com/in/hermesjuan/"target="_blank" class="SocialLinks">
+              <img src={require('../images/linkedin-logo.svg')}></img>
+            </a>
+            <a href="https://twitter.com/hermesj91"target="_blank" class="SocialLinks">
+              <img src={require('../images/twitter-logo.svg')}></img>
+            </a>
+            <a href="https://www.behance.net/hermesjuan"target="_blank" class="SocialLinks">
+              <img src={require('../images/behance-logo.svg')}></img>
+            </a>
             </div>
           Built by Hermes © {new Date().getFullYear()}, with
           {` `}

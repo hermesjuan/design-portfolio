@@ -10,7 +10,8 @@ const Section = styled.div `
     padding: 160px;
     text-align: center;
     transition: 0.1s cubic-bezier(0.2, 0.8, 0.8, 1);
-    h1 { font-size: 30px; }
+    h1 { font-size: 30px;
+    margin: 10px auto; }
     a {
         font-family: 'Merriweather', serif;
         color: inherit;

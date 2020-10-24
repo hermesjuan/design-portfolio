@@ -93,6 +93,16 @@ const Callout = styled.div `
   padding-left: 14px;
   background-color: white;
 `
+const FinalSection =styled(Section)`
+  text-align: center;
+  max-width: 460px;
+  left: 0;
+  right: 0;
+  @media (max-width: 600px) {
+    h1 {font-size: 32px; }
+    img { max-width: 150px;}
+  }
+`
 /* Colors for different sections: Education, Jobs and My own things */
 
 const Education = styled.div `
@@ -286,6 +296,12 @@ const AboutMe = () => (
         <p>Right now we are trying to slowly build a more specialized team that can better handle the growth Betacards is having.</p>
       </MyOwnThings>
     </Section>
+    <FinalSection>
+      <div style={{width: '100px', height: '5px', background: '#C6ECFD', margin: '40px auto'}}></div>
+      <img src={require('../images/me.png')} alt="Picture of yours truly"/> 
+      <h1>That's all folks!</h1>
+      <p>If some how you are not a recruiter or looking for hires and ended up here and feel like talking, please do! My e-mail is down there 👇</p>
+    </FinalSection>
   </Layout>
 )
 

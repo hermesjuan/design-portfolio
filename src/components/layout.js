@@ -46,7 +46,10 @@ const Layout = ({ children }) => {
             <a href="https://www.behance.net/hermesjuan"target="_blank" class="SocialLinks">
               <img src={require('../images/behance-logo.svg')}></img>
             </a>
-            </div>
+            <a href="https://linktr.ee/hermesjuan"target="_blank" class="SocialLinks">
+              <img src={require('../images/linktree-logo.svg')}></img>
+            </a>
+          </div>
           Built by Hermes © {new Date().getFullYear()}, with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>

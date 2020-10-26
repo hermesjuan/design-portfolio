@@ -147,19 +147,14 @@ footer {
 
 .SocialLinksGroup {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  max-width: 130px;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 160px;
   margin: auto;
   padding: 35px 200px 10px 200px;
 }
 
 .SocialLinks {
   cursor: pointer;
-  font-family: 'Inconsolata', monospace;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.4;
-  text-decoration: underline;
 }
 
 .Highlight {

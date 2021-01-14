@@ -113,15 +113,16 @@ const AboutMe = () => (
     <Hero>
       <HeroGroup>
         <h1>I like design, music, photography and everything tech related.</h1>
-        <p>Since high school i've been drawn to technology and everything it can accomplish. At first i thought the only way to get in the field was by becoming a programmer. Then i realized that design had a ton to do with technology, and from that point it was clear to me that i wanted to be wherever technology and design overlap. Here is how i got here:</p>
+        <p>Since high school i've been drawn to technology and everything it can accomplish. At first i thought the only way to get in the field was by becoming a programmer. Then i realized that design had a ton to do with technology, and from that point it was clear to me that i wanted to be wherever technology and design overlap.</p>
+        <p>Here's my journey so far:</p>
       </HeroGroup>
     </Hero>    
     <Section>
       <h3>My journey</h3>    
       <JourneyGraph src={require('../images/journey-graph.svg')} alt="Graph of my journey so far"/>
       <ResponsiveJourneyGraph src={require('../images/responsive-journey-graph.svg')} alt="Graph of my journey so far"/>
-      <AniLink paintDrip to="/deep-webrmes" hex="#C6ECFD">Dare to dig deeper?</AniLink>
     </Section>
+    <Section><AniLink paintDrip to="/deep-webrmes" hex="#C6ECFD">Dare to dig deeper?</AniLink></Section>
     <Section>
       <Group>
         <Left>
@@ -195,7 +196,7 @@ const AboutMe = () => (
             <br></br>
             Startup Institute New York
             <br></br>
-            2014 - 2014
+            Feb - Apr 2014
           </p>
 
           <h2>Strengths</h2>

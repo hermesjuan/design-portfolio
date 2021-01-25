@@ -208,17 +208,6 @@ const AboutMe = () => (
           With a Growth Mindset<br></br>
           Adaptable
           </p>
-
-          <h2>I want to...</h2>
-          <p>
-          Get things done<br></br>    
-          Absorb uncertainty<br></br>
-          Persevere and focus<br></br>
-          Develop others<br></br>
-          Collaborate effectively<br></br>
-          Inspire commitment<br></br>
-          Learn new skills until i'm 100
-          </p>
         </Right>
       </Group>      
     </Section>

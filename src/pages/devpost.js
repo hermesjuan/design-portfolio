@@ -72,7 +72,7 @@ export default ({data}) => (
             <p>Check out more about them at <a href="https://devpost.com/" target="_blank">devpost.com</a></p>
         </CasesSection>
         <CasesSection>
-            <Button text="← Go Home" link="/" />
+            <Button text="← Back Home" link="/" />
         </CasesSection>
 
         <OtherProjects 

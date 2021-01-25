@@ -48,7 +48,7 @@ export default ({data}) => (
         </CasesSection>
         
         <CasesSection>
-            <Button text="← Go Home" link="/" />
+            <Button text="← Back Home" link="/" />
         </CasesSection>
         <OtherProjects 
             link1="/beta"

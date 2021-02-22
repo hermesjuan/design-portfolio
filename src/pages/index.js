@@ -11,8 +11,8 @@ const IndexPage = () => (
     <div className="Hero">
       <div className="HeroGroup">
       <img className="ImageBehindTitle" src={require('../images/Hand.svg')} alt="Hand"></img>
-       <h1>Hey! I'm looking for the next step in growing my career in tech</h1>
-       <p>I’m looking to join an established tech company to keep growing on my career either as a <a className="Wtf">Senior Generalist designer,</a> mid-level UI/UX or a junior front-end developer. </p>
+       <h1>Hey! I'm looking for opportunities as a UI designer</h1>
+       <p>I’m open for opportunities to keep growing on my career as a graphic designer with a special interest of working in tech (UI, UX, Product)</p>
        <p>You can learn a little more <AniLink paintDrip to="/about" hex="#C6ECFD">about me</AniLink> or keep scrolling to see some of the work i’ve done.</p>        
       </div>
     </div>    

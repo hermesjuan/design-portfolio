@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Its Hermes!`,
+    title: `Hello!`,
     description: `I'm looking for the next step in my career. Take a look at some of the stuff i did so far`,
     keyboards: 'design, remote, UI/UX, portfolio, hiring, visual designer, Hermes Juan',
     author: `@hermesjuan`,

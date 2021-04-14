@@ -23,11 +23,13 @@ const IndexPage = () => (
     </div>
 
     <div className="CasesGroup">
-      <AniLink paintDrip to="/beta" hex="#C6ECFD">
+
+    <AniLink paintDrip to="/aruba" hex="#C6ECFD">
         <Cases
           textColumn="1"
-          title="Bootstrapping a methodolgy-based startup"
-          image={require('../images/case-img-betacards.png')}          
+          title="Admin panel for professionals of the beauty industry"
+          image={require('../images/case-img-aruba.png')}
+          right
         />
       </AniLink>
 
@@ -47,22 +49,21 @@ const IndexPage = () => (
         />
       </AniLink>
 
-      <AniLink paintDrip to="/sepsa" hex="#C6ECFD">
+      <AniLink paintDrip to="/beta" hex="#C6ECFD">
         <Cases
           textColumn="2"
+          title="Bootstrapping a methodolgy-based startup"
+          image={require('../images/case-img-betacards.png')}          
+        />
+      </AniLink>
+
+      <AniLink paintDrip to="/sepsa" hex="#C6ECFD">
+        <Cases
+          textColumn="1"
           title="Rethinking a web after rethinking a company"
           image={require('../images/case-img-sepsa.png')}
         />
       </AniLink>
-
-      <a href="http://eklf.com.py/" target="_blank">
-        <Cases
-          textColumn="1"
-          title="Rebranding of a young law firm"
-          image={require('../images/case-img-eklf.png')}
-          right
-        />
-      </a>
 
       <a href="https://www.notion.so/Memorize-App-Dipped-my-toes-in-SwiftUI-during-lockdown-e4ce4a8c6643471d968b9a03b34bf2f1" target="_blank">
         <Cases

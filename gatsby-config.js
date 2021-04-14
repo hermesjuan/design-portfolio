@@ -30,7 +30,7 @@ module.exports = {
         forceBase64Format: ``, // valid formats: png,jpg,webp
         useMozJpeg: process.env.GATSBY_JPEG_ENCODER === `MOZJPEG`,
         stripMetadata: true,
-        defaultQuality: 50,
+        defaultQuality: 60,
       },
     },
     `gatsby-plugin-styled-components`,

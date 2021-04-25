@@ -117,7 +117,7 @@ const AboutMe = () => (
     <Hero>
       <HeroGroup>
         <h1>Short story long</h1>
-        <p>Here is an in-depth look at my journey so far. It’s an effort to describe what i have been through, how i made some decisions and what was the most important thing in each stage.</p>
+        <p>Here is an in-depth look at my journey so far. It’s an effort to describe what I have been through, how I made some decisions and what was the most important thing in each stage.</p>
         <p>Unlike a CV, this section start at the
         begining, to give a better sense of how
         my thinking evolved.</p>

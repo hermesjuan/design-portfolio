@@ -22,16 +22,6 @@ const HeroGroup = styled.div `
   h1 { max-width: 800px; }
   p { max-width: 500px; }
 `
-const JourneyGraph = styled.img `
-  max-width: 600px;
-  position: absolute;
-  z-index: -1;
-  opacity: 0.2;
-  margin: -30px 0 0 350px;
-  @media (max-width: 700px) {
-    display: none;
-  } 
-`
 const Section = styled.div`
   margin: 50px auto;
   padding: 30px 50px;
@@ -40,9 +30,9 @@ const Section = styled.div`
     font-family: Merriweather;
     font-style: normal;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 1em;
     max-width: 780px;
-    color: #646464;
+    color: #000;
   }
   a {
     color: inherit;
@@ -80,7 +70,7 @@ const Callout = styled.div `
   }
   strong {
     font-family: 'Raleway', sans-serif;
-    font-size: 18px;
+    font-size: 1.3em;
     line-height: 2;
   }
 `
@@ -88,9 +78,10 @@ const Callout = styled.div `
   position: relative;
   font-family: Merriweather;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 1.5em;
   border-left: 4px solid;
-  padding-left: 14px;
+  padding: 20px;
+  margin: 40px 10px 50px 0px;
   background-color: white;
 `
 const FinalSection =styled(Section)`
@@ -125,15 +116,17 @@ const AboutMe = () => (
     <SEO title="A lot more about me" />
     <Hero>
       <HeroGroup>
-        <JourneyGraph src={require('../images/journey-graph.svg')} alt="Graph of my journey so far"/>
-        <h1>I'm flattered</h1>
-        <p>Here is an in-depth look at the joruney displayed in this graphic. It is an effort to describe what i have been through, how i made some decisions and what was the most important thing in each stage.</p>
+        <h1>Short story long</h1>
+        <p>Here is an in-depth look at my joruney so far. It’s an effort to describe what i have been through, how i made some decisions and what was the most important thing in each stage.</p>
+        <p>Unlike a CV, this section start at the
+        begining, to give a better sense of how
+        my thinking evolved.</p>
       </HeroGroup>
     </Hero>    
     
     <Section>
       <Education>
-        <h2>Education</h2>
+        <h3>Education</h3>
         <Line/>
 
         <Callout>
@@ -141,17 +134,15 @@ const AboutMe = () => (
           Universidad Nacional de Asunción<br></br>
           Facultad Politécnica<br></br>
           2010 - 2012</p>
-          <p><strong>Graphic Design Bachelors Degree</strong><br></br>
+          <p><strong>Bachelor of Design</strong><br></br>
           Universidad Católica de Asunción<br></br>
           Facultad de Ciencias y Tecnología<br></br>
           2012 - 2017</p>
         </Callout>
 
-        <h3>Why is this important?</h3>
+        <TLDR>TL;DR: Started Software Engineering but switched to Graphic Design. From an early stage I could see that technology and design are important to me, and that reamins true today.</TLDR>
 
-        <TLDR>TL;DR: Started Software Engineering but switched to Graphic Design. From an early stage i could see that technology and design are important to me, and that reamins true today.</TLDR>
-
-        <p>At the age of 16 i had a little bit of a crisis. It didn’t make sense to me that at 18 (just 2 years from that) I was supposed to make this huge decision of what I was going to do for the rest of my life (It still doesn’t make sense to me).</p>
+        <p>At the age of 16 i had a little bit of a crisis. It didn’t make sense to me that at 18 (just 2 years from that) I was supposed to make this huge decision of what I was going to do for the rest of my life (It still doesn’t makes sense to me).</p>
 
         <p>So after dealing with that impossible question during the last years of high school at the private german school i attended, I ended up doing what other people saw i could be good at: Tech and logical stuff. So i applied to the National University of Asunción, the best college to study Software Engineering in my country that i knew of. It has super competitive entry exams, it was one of the hardest challenges i had faced... and I got in! I’m still super proud of that 😎. I believe only 60 people out of 300 got in.</p>
 
@@ -175,13 +166,11 @@ const AboutMe = () => (
           2016</p>
         </Callout>
 
-        <h3>Why is this important?</h3>
+        <TLDR>TL;DR: Introduced me to the startup world and had a big influence in the search of what I want to do in life.</TLDR>
 
-        <TLDR>TL;DR: Introduced me to the startup world and had a big influence in the search of what i want to do in life.</TLDR>
+        <p>This was really a turning point in my career. I have a sister that was living in NY, and I really wanted to visit her but also, i was looking  for some kind of course i could make there, since I had a place to stay.</p>
 
-        <p>This was really a turning point in my career. I have a sister that was living in NY, and i really wanted to visit her but also, i was looking  for some kind of course i could make there, since i had a place to stay.</p>
-
-        <p>TThis search triggered kind of a career deciding moment. It brought what i really wanted to do into question. I bumped into UX, started researching it a lot and it seemed interesting. </p>
+        <p>TThis search triggered kind of a career deciding moment. It brought what I really wanted to do into question. I bumped into UX, started researching it a lot and it seemed interesting. </p>
 
         <p>After looking into various bootcamps-like programs (like General Assembly) i found the Startup Institute, it was like a startup accelerator, but for people that wanted to work in startups (btw i had no idea what a startup was). What caught my attention was that they would help not only with getting web development technical skills, but also with that big question of what i really wanted to do.</p>
 
@@ -199,8 +188,6 @@ const AboutMe = () => (
           2012 - 2013</p>
         </Callout>
 
-        <h3>Why is this important?</h3>
-
         <TLDR>TL;DR: Got my first job at the best ad agency in Paraguay after finishing a 2 months internship  with a lot of help and lot of work.</TLDR>
 
         <p>My first Job! As i mentioned in the previous section, I decided to start de bachelors degree in graphic design only if i started working right away. And not anywhere, i wanted to work in the best company in that field. That is how i found Oniria/TBWA, the best ad agency in Paraguay (at least for me).</p>
@@ -217,8 +204,6 @@ const AboutMe = () => (
           2014 - 2016 </p>
         </Callout>
 
-        <h3>Why is this important?</h3>
-
         <TLDR>TL;DR: Junior → Senior Designer. Had a taste of what being a founder was.</TLDR>
 
         <p>So actually i got hired at Brandon (that's coming up next!) but after a few weeks after i started this new ad hoc agency project got on the table of some of the same partners at Brandon and decided to put on a team. They thought i could be a good fit and i said yes. </p>
@@ -234,8 +219,6 @@ const AboutMe = () => (
           Facultad Politécnica<br></br>
           2016 - 2019</p>
         </Callout>
-
-        <h3>Why is this important?</h3>
 
         <TLDR>TL;DR: Change of pace. An overall incredible work experience.</TLDR>
 
@@ -255,8 +238,6 @@ const AboutMe = () => (
           Product Manager & Cofounder <br></br>
           2018 - 2020</p>
         </Callout>
-
-        <h3>Why is this important?</h3>
 
         <TLDR>TL;DR: First founder experience creating an innovation lab called Miut. Was in charge of all kinds of products.</TLDR>
 
@@ -283,8 +264,6 @@ const AboutMe = () => (
           2019 - 2020</p>
         </Callout>
 
-        <h3>Why is this important?</h3>
-
         <TLDR>TL;DR: The biggest product design and management role i had so far.</TLDR>
 
         <p>Betacards is a methodology-based company, think of Strategyzer a company built around the creation and monetization of the Business Model Canvas. Betacards created a methodology and sells certifications to people wanting to facilitate workshops using that methodology.</p>
@@ -298,9 +277,8 @@ const AboutMe = () => (
     </Section>
     <FinalSection>
       <div style={{width: '100px', height: '5px', background: '#C6ECFD', margin: '40px auto'}}></div>
-      <img src={require('../images/me.png')} alt="Picture of yours truly"/> 
       <h1>That's all folks!</h1>
-      <p>If some how you are not a recruiter or looking for hires and ended up here and feel like talking, please do! My e-mail is down there 👇</p>
+      <p>If somehow you are not a recruiter or looking for hires and ended up here, if you feel like talking my e-mail is down there 👇</p>
     </FinalSection>
   </Layout>
 )

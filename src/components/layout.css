@@ -35,7 +35,7 @@ a:hover { color: #139CD7; }
 p {
   font-family: 'Merriweather', serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 1em;
   line-height: 1.6;
 }
 
@@ -123,7 +123,7 @@ h1 {
 footer {
   width: 100%;
   text-align: center;
-  font-size: 12px;
+  font-size: 1em;
   padding-bottom: 20px;
 }
 
@@ -135,7 +135,7 @@ footer {
 
 
 .FooterMessage h4 {
-  font-size: 16px;
+  font-size: 1.1em;
   position: absolute;
   right: 0;
   left: 0;
@@ -147,7 +147,7 @@ footer {
 
 .SocialLinksGroup {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   max-width: 160px;
   margin: auto;
   padding: 35px 200px 10px 200px;

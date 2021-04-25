@@ -113,7 +113,7 @@ const AboutMe = () => (
     <Hero>
       <HeroGroup>
         <h1>I like design, music, photography and everything tech related.</h1>
-        <p>Since high school i've been drawn to technology and everything it can accomplish. At first i thought the only way to get in the field was by becoming a programmer. Then i realized that design had a ton to do with technology, and from that point it was clear to me that i wanted to be wherever technology and design overlap.</p>
+        <p>Since high school I've been drawn to technology and everything it can accomplish. At first I thought the only way to get in the field was by becoming a programmer. Then I realized that design had a ton to do with technology, and from that point it was clear to me that I wanted to be wherever technology and design overlap.</p>
         <p>Here's my journey so far:</p>
       </HeroGroup>
     </Hero>    
@@ -168,8 +168,8 @@ const AboutMe = () => (
           <h2>Contact Info</h2>
           <p>
             hermes@hey.com<br></br>    
-            linkedin.com/in/hermesjuan<br></br>
-            (Sioux Falls-US/Asuncion-PY)
+            <a href="https://www.linkedin.com/in/hermesjuan" target="_blank">linkedin.com/in/hermesjuan</a><br></br>
+            Asunción - PY
           </p>
 
           <h2>Education</h2>
@@ -183,7 +183,7 @@ const AboutMe = () => (
             <em className="Highlight">Unfinished 🤷‍♂️</em>
           </p>
           <p>
-            <strong>Graphic Desing B.D.</strong>
+            <strong>Bachelor of Design</strong>
             <br></br>
             Universidad Católica de Asunción - CyT
             <br></br>
@@ -205,7 +205,7 @@ const AboutMe = () => (
           Curious<br></br>
           Hard Working<br></br>
           Creative Problem Solver<br></br>
-          With a Growth Mindset<br></br>
+          Growth Mindset<br></br>
           Adaptable
           </p>
         </Right>

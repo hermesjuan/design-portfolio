@@ -99,7 +99,7 @@ h1 {
   cursor: pointer;
   font-family: 'Merriweather', serif;
   font-weight: 300;
-  font-size: 13px;
+  font-size: 1em;
   max-width: 485px;
   line-height: 1.4;
   text-decoration: underline;

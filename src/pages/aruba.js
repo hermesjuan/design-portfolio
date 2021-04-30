@@ -44,10 +44,6 @@ export default ({data}) => (
         <FullWidthImg src={require('../images/aruba-pantallas-al-empezar.png')} alt="What the panel looked like before"></FullWidthImg> 
 
         <CasesSection>
-            <h2>New brand guidelines</h2>
-
-            <img src={require('../images/aruba-new-brand-guidelines.png')} alt="New logo"></img>
-
             <h2>Organizing the file a.k.a. making components</h2>
         </CasesSection>
 

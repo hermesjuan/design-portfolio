@@ -71,7 +71,7 @@ const Callout = styled.div `
   strong {
     font-family: 'Raleway', sans-serif;
     font-size: 1.3em;
-    line-height: 2;
+    line-height: 1.5;
   }
 `
   const TLDR = styled.h2 `
@@ -81,7 +81,7 @@ const Callout = styled.div `
   font-size: 1.5em;
   border-left: 4px solid;
   padding: 20px;
-  margin: 40px 10px 50px 0px;
+  margin: 60px 10px 70px 0px;
   background-color: white;
 `
 const FinalSection =styled(Section)`

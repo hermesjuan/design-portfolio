@@ -33,9 +33,17 @@ const IndexPage = () => (
         />
       </AniLink>
 
-      <AniLink paintDrip to="/muv" hex="#C6ECFD">
+      <AniLink paintDrip to="/innovation-index" hex="#C6ECFD">
         <Cases          
           textColumn="2"
+          title="Designing a tool that measures innovation"
+          image={require('../images/case-img-inndex.png')}
+        />
+      </AniLink>
+
+      <AniLink paintDrip to="/muv" hex="#C6ECFD">
+        <Cases          
+          textColumn="1"
           title="Creating the MVP of the first ride-sharing app of Paraguay"
           image={require('../images/case-img-muv.png')}
         />
@@ -43,7 +51,7 @@ const IndexPage = () => (
 
       <AniLink paintDrip to="/devpost" hex="#C6ECFD">
         <Cases
-          textColumn="1"
+          textColumn="2"
           title="Researching how developers search for new jobs"
           image={require('../images/case-img-devpost.png')}
         />
@@ -51,7 +59,7 @@ const IndexPage = () => (
 
       <AniLink paintDrip to="/beta" hex="#C6ECFD">
         <Cases
-          textColumn="2"
+          textColumn="1"
           title="Bootstrapping a methodolgy-based startup"
           image={require('../images/case-img-betacards.png')}          
         />
@@ -59,7 +67,7 @@ const IndexPage = () => (
 
       <AniLink paintDrip to="/sepsa" hex="#C6ECFD">
         <Cases
-          textColumn="1"
+          textColumn="2"
           title="Rethinking a web after rethinking a company"
           image={require('../images/case-img-sepsa.png')}
         />
@@ -67,7 +75,7 @@ const IndexPage = () => (
 
       <a href="https://www.notion.so/Memorize-App-Dipped-my-toes-in-SwiftUI-during-lockdown-e4ce4a8c6643471d968b9a03b34bf2f1" target="_blank">
         <Cases
-          textColumn="2"
+          textColumn="1"
           title="Dipped my toes in SwiftUI during lockdown"
           image={require('../images/case-img-memorize.png')}
           />

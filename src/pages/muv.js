@@ -59,9 +59,9 @@ export default ({data}) => (
             text2="Researching how developers search for jobs"
             image2={require('../images/case-img-devpost.png')}
             
-            link3="http://eklf.com.py/"
-            text3="Rebranding for a young law firm"
-            image3={require('../images/case-img-eklf.png')}  
+            link3="/innovation-index"
+            text3="Desgining a tool that measures innovation"
+            image3={require('../images/case-img-inndex.png')}   
 
         />
 

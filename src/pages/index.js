@@ -36,7 +36,7 @@ const IndexPage = () => (
       <AniLink paintDrip to="/innovation-index" hex="#C6ECFD">
         <Cases          
           textColumn="2"
-          title="Designing a tool that measures innovation"
+          title="Prototyping a tool that measures innovation"
           image={require('../images/case-img-inndex.png')}
         />
       </AniLink>

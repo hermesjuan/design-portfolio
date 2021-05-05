@@ -42,8 +42,8 @@ const Section = styled.div`
     font-family: 'Merriweather';
     font-style: normal;
     font-weight: 300;
-    font-size: 12px;
-    line-height: 1.5;
+    font-size: 0.8em;
+    line-height: 1.6;
     max-width: 520px;
   }
   a {
@@ -161,7 +161,7 @@ const AboutMe = () => (
           
           <p>Started in the digital department and in less than a year ended up being the lead designer of the bank Itaú, arguably the most important bank of the country.</p>
 
-          <p>Also collaborated with projects of other brands like Toyota, Shopping Mariscal, Mabroro, among others. Also collaborated with projects of other brands like Toyota, Shopping Mariscal, Mabroro, among others.</p>
+          <p>Also collaborated with projects of other brands like Toyota, Shopping Mariscal, Marlboro, among others. Also collaborated with projects of other brands like Toyota, Shopping Mariscal, Mabroro, among others.</p>
 
         </Left>
         <Right>

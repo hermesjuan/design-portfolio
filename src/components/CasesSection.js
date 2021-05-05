@@ -33,7 +33,7 @@ const CasesSection = styled.div`
     font-family: Merriweather;
     font-style: normal;
     font-weight: 300;
-    font-size: 13px;
+    font-size: 1em;
     line-height: 1.7;
     max-width: 700px;
   }

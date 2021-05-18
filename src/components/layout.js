@@ -47,9 +47,8 @@ const Layout = ({ children }) => {
               <img src={require('../images/behance-logo.svg')}></img>
             </a>
           </div>
-          Built by Hermes © {new Date().getFullYear()}, with
-          {` `}
-          <a href="http://github.com/hermesjuan" target="_blank">Gatsby</a>
+          <a href="https://github.com/hermesjuan/design-portfolio" target="_blank">Built</a> by Hermes © {new Date().getFullYear()}
+          
         </footer>
     </>
   )

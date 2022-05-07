@@ -112,9 +112,8 @@ const AboutMe = () => (
     <SEO title="About me" />
     <Hero>
       <HeroGroup>
-        <h1>I like design, music, photography and everything tech related.</h1>
-        <p>Since high school I've been drawn to technology and everything it can accomplish. At first I thought the only way to get in the field was by becoming a programmer. Then I realized that design had a ton to do with technology, and from that point it was clear to me that I wanted to be wherever technology and design overlap.</p>
-        <p>Here's my journey so far:</p>
+        <h1>From an intern at an ad agency in Paraguay to a Product designer at an US startup</h1>
+        <p>Since high school I've been drawn to technology and everything it can accomplish. I didn't had a straight path to working in tech, but that gave me some time to hone my design skills as a graphic designer, later a brand designer, a web and UX designer, a founder and today as a product designer.</p>
       </HeroGroup>
     </Hero>    
     <Section>
@@ -127,6 +126,10 @@ const AboutMe = () => (
       <Group>
         <Left>
           <h2>Work Experience</h2>
+
+          <Position>Product Designer @ <a href="https://www.sardius.media" target="_blank">www.sardius.media</a></Position>
+          <Year>2021 - Present day</Year>
+          <p>During the company's transition from Custom Services to Saas I'm helping building a strong and well positioned brand in the online video B2B market. Worked on the redesign of the Video Player, the UI of the analytics dashboard, new templates like a entry point layout and a VOD template, among many other things including several websites for differents client’s events.</p>
 
           <Position>Product Manager & Cofounder @ <a href="https://www.beta.cards" target="_blank">ww.beta.cards</a></Position>
           <Year>2018 - 2020</Year>

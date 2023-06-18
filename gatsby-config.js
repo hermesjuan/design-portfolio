@@ -15,11 +15,17 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: "UA-178192384-1",
+        trackingIds: [
+        "G-L7FH9ZKGRF", // Google Analytics / GA
+        ],
+        pluginConfig: {
+          // Puts tracking script in the head instead of the body
+          head: true
+        },
       },
-    },    
+    }    
     `gatsby-plugin-transition-link`,    
     `gatsby-transformer-sharp`,
     {

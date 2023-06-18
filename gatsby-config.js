@@ -25,7 +25,7 @@ module.exports = {
           head: true
         },
       },
-    }    
+    },
     `gatsby-plugin-transition-link`,    
     `gatsby-transformer-sharp`,
     {

@@ -24,8 +24,8 @@ module.exports = {
           // Puts tracking script in the head instead of the body
           head: true
         },
-      },
-    },    
+      }, 
+    },
     `gatsby-plugin-transition-link`,    
     `gatsby-transformer-sharp`,
     {

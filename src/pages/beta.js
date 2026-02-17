@@ -8,7 +8,7 @@ import Img from "gatsby-image/withIEPolyfill"
 import OtherProjects from '../components/OtherProjects'
 import HeroImage from '../components/HeroImage'
 import CasesSection from '../components/CasesSection'
-import CasesTextNexToImage from '../components/CasesTextNextToImage'
+import CasesTextNextToImage from '../components/CasesTextNextToImage'
 
 
 export default ({data}) => (
@@ -40,7 +40,7 @@ export default ({data}) => (
             <h2>Description</h2>
             <p>Here is the evolution of Betacards as a project. In it's history is reflected my way of thinking and decision-making.</p>
 
-            <CasesTextNexToImage>
+            <CasesTextNextToImage>
                 <div>
                     <h3>The idea</h3>
                     <p>It all started with some workshops we did at Miut to help clients get started with their new business ideas. We realized that some steps  repeated no matter the project or the client. For instance questions at the beginning of every process: "Who's this for? What kind of problem is it solving?" and so on. So we worked on a framework that contemplated all of those steps for working with future clients.</p>
@@ -48,7 +48,7 @@ export default ({data}) => (
                     
                 </div>
                 <img src={require('../images/first-version-of-betacards.png')} alt ="First version of the cards: just some post-its on the wall"></img>
-            </CasesTextNexToImage>
+            </CasesTextNextToImage>
             
 
             <h3>Experiments</h3>

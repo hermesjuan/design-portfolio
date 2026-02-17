@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const CasesTextNexToImage = styled.div `
+const CasesTextNextToImage = styled.div `
     display: grid;
     grid-template-columns: 1fr 0.3fr;
     grid-column-gap: 30px;
@@ -12,4 +12,4 @@ const CasesTextNexToImage = styled.div `
 
 `
 
-export default CasesTextNexToImage
+export default CasesTextNextToImage

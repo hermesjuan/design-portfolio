@@ -34,17 +34,17 @@ const Layout = ({ children }) => {
           <div className="FooterMessage">
           {/* <!-- Thank you Stephen Dubner for this awesome message --> */}
             <h4>Take care, and if you can, someone else.</h4>
-            <img src={require('../images/raised-hands.svg')}></img>            
+            <img src={require('../images/raised-hands.svg')} alt=""></img>
           </div>
           <div className="SocialLinksGroup">
-            <a href="https://www.linkedin.com/in/hermesjuan/" target="_blank" class="SocialLinks">
-              <img src={require('../images/linkedin-logo.svg')}></img>
+            <a href="https://www.linkedin.com/in/hermesjuan/" target="_blank" className="SocialLinks" rel="noreferrer">
+              <img src={require('../images/linkedin-logo.svg')} alt="LinkedIn"></img>
             </a>
-            <a href="https://www.instagram.com/hermesgrafia/" target="_blank" class="SocialLinks">
-              <img src={require('../images/instagram-logo.svg')}></img>
+            <a href="https://www.instagram.com/hermesgrafia/" target="_blank" className="SocialLinks" rel="noreferrer">
+              <img src={require('../images/instagram-logo.svg')} alt="Instagram"></img>
             </a>
-            <a href="https://www.behance.net/hermesjuan" target="_blank" class="SocialLinks">
-              <img src={require('../images/behance-logo.svg')}></img>
+            <a href="https://www.behance.net/hermesjuan" target="_blank" className="SocialLinks" rel="noreferrer">
+              <img src={require('../images/behance-logo.svg')} alt="Behance"></img>
             </a>
           </div>
           <a href="https://github.com/hermesjuan/design-portfolio" target="_blank">Built</a> by me © {new Date().getFullYear()}

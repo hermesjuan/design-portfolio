@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const Section = styled.div `
@@ -96,5 +97,17 @@ const OtherProjects = props => (
         </Group>
     </Section>
 )
+
+OtherProjects.propTypes = {
+  link1: PropTypes.string.isRequired,
+  text1: PropTypes.string.isRequired,
+  image1: PropTypes.string.isRequired,
+  link2: PropTypes.string.isRequired,
+  text2: PropTypes.string.isRequired,
+  image2: PropTypes.string.isRequired,
+  link3: PropTypes.string.isRequired,
+  text3: PropTypes.string.isRequired,
+  image3: PropTypes.string.isRequired,
+}
 
 export default OtherProjects

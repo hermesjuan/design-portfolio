@@ -43,8 +43,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Hermes Juan Design Portfolio`,
+        short_name: `Hermes`,
         start_url: `/`,
         background_color: `#FFFFFF`,
         theme_color: `#C6ECFD`,

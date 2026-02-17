@@ -14,8 +14,11 @@ class Header extends React.Component {
   }
 
   componentDidMount() {
-    window.addEventListener('scroll',  
-    this.handleScroll)
+    window.addEventListener('scroll', this.handleScroll)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll)
   }
 
   handleScroll = (event) => {
@@ -32,7 +35,7 @@ class Header extends React.Component {
     return (
       <div className={this.state.hasScrolled ? 'Header HeaderScrolled' : 'Header'}>
         <div className="HeaderGroup">
-          <AniLink className='Logo' paintDrip to="/" hex="#C6ECFD"><img src={require('../images/Logo.svg')} width="85px"/></AniLink>
+          <AniLink className='Logo' paintDrip to="/" hex="#C6ECFD"><img src={require('../images/Logo.svg')} width="85px" alt="Hermes Juan logo"/></AniLink>
           <div></div>
           <AniLink className='Link' paintDrip to="/about" hex="#C6ECFD">About me</AniLink>
         </div>

@@ -57,7 +57,7 @@ const NotFoundPage = () => (
     <footer>          
           <div className="SocialLinksGroup">
             {staticdata.cells.map(cell => (
-              <a href={cell.url} target="_blank" class="SocialLinks" rel="noreferrer">{cell.title}</a>
+              <a href={cell.url} target="_blank" className="SocialLinks" rel="noreferrer">{cell.title}</a>
             ))}
           </div>
           Built by Hermes © {new Date().getFullYear()}, with

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
@@ -28,5 +29,10 @@ const Button = props => (
         </AniLink>
     </Wrapper>
 )
+
+Button.propTypes = {
+  text: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+}
 
 export default Button

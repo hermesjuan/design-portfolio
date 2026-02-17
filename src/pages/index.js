@@ -18,7 +18,7 @@ const IndexPage = () => (
 
     <div className="StuffIDid">
       <h3>Some things I made</h3>
-      <img src={require('../images/stuff-i-did-pointer.svg')}></img>
+      <img src={require('../images/stuff-i-did-pointer.svg')} alt=""></img>
     </div>
 
     <div className="CasesGroup">

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const Wrapper = styled.div `
@@ -117,5 +118,11 @@ const CasesEven = props => (
         </CaseBanner>
     </Wrapper>
 )
+
+CasesEven.propTypes = {
+  image: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  textColumn: PropTypes.string,
+}
 
 export default CasesEven

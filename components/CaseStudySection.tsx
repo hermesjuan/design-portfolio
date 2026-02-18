@@ -31,13 +31,13 @@ export default function CaseStudySection({
         Sticky separator bar — sticks just below the nav (nav = ~3rem tall).
         Full-width, sits on top of the scrolling content.
       */}
-      <div className="sticky top-[3rem] z-40 bg-white border-t border-black">
-        <div className="max-w-site mx-auto px-6 md:px-10 py-3 flex items-center justify-between">
+      <div className="sticky top-[3rem] z-40 bg-white border-y border-[#fafafa]">
+        <div className="max-w-site mx-auto px-4 md:px-10 py-3 relative flex items-center">
           <span className="font-sans text-xs tracking-wide text-black">{year}</span>
-          <span className="font-sans text-xs uppercase tracking-widest text-black">
+          <span className="font-sans text-xs uppercase tracking-widest text-black absolute left-1/2 -translate-x-1/2">
             {category}
           </span>
-          <span className="font-sans text-xs uppercase tracking-widest text-black">
+          <span className="font-sans text-xs uppercase tracking-widest text-black ml-auto">
             {company}
           </span>
         </div>

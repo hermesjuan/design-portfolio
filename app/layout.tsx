@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   title: "Hermes Juan · Product Designer",
   description:
     "Portfolio of Hermes Juan, a product designer specializing in UI, UX and Product design.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({

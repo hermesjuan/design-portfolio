@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Cormorant_Garamond } from "next/font/google";
+import { Inter, Young_Serif } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -7,11 +7,10 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
-const cormorant = Cormorant_Garamond({
+const youngSerif = Young_Serif({
   subsets: ["latin"],
-  weight: ["300", "400", "600", "700"],
-  style: ["normal", "italic"],
-  variable: "--font-cormorant",
+  weight: ["400"],
+  variable: "--font-young-serif",
 });
 
 export const metadata: Metadata = {
@@ -28,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${cormorant.variable} font-sans bg-white text-black antialiased`}
+        className={`${inter.variable} ${youngSerif.variable} font-sans bg-white text-black antialiased`}
       >
         {children}
       </body>

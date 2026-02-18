@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        serif: ["var(--font-cormorant)", "serif"],
+        serif: ["var(--font-young-serif)", "serif"],
         sans: ["var(--font-inter)", "sans-serif"],
       },
       maxWidth: {

@@ -33,7 +33,7 @@ export default function CaseStudySection({
       */}
       <div className="sticky top-[3rem] z-40 bg-white border-y border-[#fafafa]">
         <div className="max-w-site mx-auto px-4 md:px-10 py-3 relative flex items-center">
-          <span className="font-sans text-xs tracking-wide text-black">{year}</span>
+          <span className="font-serif text-xs tracking-wide text-black">{year}</span>
           <span className="font-serif text-xs uppercase tracking-widest text-black absolute left-1/2 -translate-x-1/2">
             {category}
           </span>

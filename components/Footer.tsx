@@ -6,13 +6,13 @@ export default function Footer() {
           href="https://www.linkedin.com/in/hermesjuan/"
           target="_blank"
           rel="noreferrer"
-          className="font-sans text-sm underline underline-offset-4 decoration-1 hover:opacity-60 transition-opacity"
+          className="font-serif text-sm underline underline-offset-4 decoration-1 hover:opacity-60 transition-opacity"
         >
           Linkedin
         </a>
         <a
           href="mailto:hermes@55.design"
-          className="font-sans text-sm underline underline-offset-4 decoration-1 hover:opacity-60 transition-opacity"
+          className="font-serif text-sm underline underline-offset-4 decoration-1 hover:opacity-60 transition-opacity"
         >
           hermes@55.design
         </a>
@@ -20,7 +20,7 @@ export default function Footer() {
           href="https://www.behance.net/hermesjuan"
           target="_blank"
           rel="noreferrer"
-          className="font-sans text-sm underline underline-offset-4 decoration-1 hover:opacity-60 transition-opacity"
+          className="font-serif text-sm underline underline-offset-4 decoration-1 hover:opacity-60 transition-opacity"
         >
           Behance
         </a>

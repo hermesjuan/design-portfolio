@@ -10,7 +10,7 @@ export default function Home() {
       <Nav />
 
       {/* Hero */}
-      <section className="min-h-[85vh] flex items-center">
+      <section className="min-h-[30vh] flex items-center">
         <div className="max-w-site mx-auto px-6 md:px-10 w-full grid md:grid-cols-[1.1fr_1fr] gap-12 items-center py-20">
           <FadeIn>
             <h1 className="font-serif text-4xl md:text-5xl lg:text-[3.5rem] font-bold leading-[1.1]">
@@ -159,7 +159,7 @@ export default function Home() {
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </div>
-              <p className="font-sans text-sm font-medium">
+              <p className="font-serif text-sm font-medium">
                 My experience as a founder
               </p>
             </a>
@@ -180,7 +180,7 @@ export default function Home() {
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </div>
-              <p className="font-sans text-sm font-medium">Photography</p>
+              <p className="font-serif text-sm font-medium">Photography</p>
             </a>
 
             {/* Illustration */}
@@ -199,7 +199,7 @@ export default function Home() {
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </div>
-              <p className="font-sans text-sm font-medium">Illustration</p>
+              <p className="font-serif text-sm font-medium">Illustration</p>
             </a>
           </div>
         </FadeIn>

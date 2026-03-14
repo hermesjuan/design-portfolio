@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
@@ -149,6 +150,8 @@ export default function AboutPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
       />
+
+      <Nav />
 
       <main className="max-w-2xl mx-auto px-6 md:px-10 py-20">
         <h1 className="text-3xl md:text-4xl font-bold leading-tight">

@@ -6,7 +6,7 @@ Personal portfolio for Hermes Juan — product designer. Single-page site showca
 
 ## Tech stack
 
-- **Framework:** Next.js 14 (App Router)
+- **Framework:** Next.js 16 (App Router)
 - **Styling:** Tailwind CSS 3
 - **Language:** TypeScript
 - **Animation:** Framer Motion

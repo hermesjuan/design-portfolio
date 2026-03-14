@@ -14,11 +14,20 @@ const youngSerif = Young_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "Hermes Juan · Product Designer",
+  title: {
+    default: "Hermes Juan · Product Designer — Asunción, Paraguay",
+    template: "%s | Hermes Juan",
+  },
   description:
-    "Portfolio of Hermes Juan, a product designer specializing in UI, UX and Product design.",
+    "Portfolio of Hermes Juan González Stark, a senior product designer based in Asunción, Paraguay. Founder of 55.design. Specializing in UX/UI, design systems, and digital product strategy.",
+  metadataBase: new URL("https://hermesjuan.com"),
   icons: {
     icon: "/favicon.png",
+  },
+  openGraph: {
+    siteName: "Hermes Juan — Product Designer",
+    locale: "en_US",
+    type: "website",
   },
 };
 
